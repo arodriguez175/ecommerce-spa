@@ -1,16 +1,17 @@
 import Cart from "./cart/Cart";
 import Menu from "./menu/Menu";
-import Selection from "./selection/Selection";
 import Search from "./search/Search";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <div className="header">
-      <p>logo</p>
-      <p>Sign in</p>
-      <Cart />
+      <Link to="/">logo</Link>
+      <Link to="/signin">Sign in</Link>
+      <Link to="/cart">Cart</Link>
       <Menu />
-      <Selection />
+      <Link to="/men">Men</Link>
+      <Link to="/women">Women</Link>
       <Search />
     </div>
   );
