@@ -1,10 +1,14 @@
+import { HashRouter, NavLink } from "react-router-dom";
+
 function Menu() {
   return (
-    <div className="menu">
-      <p>Home</p>
-      <p>About</p>
-      <p>Contact</p>
-    </div>
+    <HashRouter>
+      <div className="menu">
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="about">About</NavLink>
+        <NavLink to="contact">Contact</NavLink>
+      </div>
+    </HashRouter>
   );
 }
 
