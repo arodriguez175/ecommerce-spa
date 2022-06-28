@@ -1,6 +1,5 @@
-import Cart from "./cart/Cart";
-import Menu from "./Menu";
-import Search from "./search/Search";
+import Menu from "../menu/Menu";
+import Search from "../search/Search";
 import { Link } from "react-router-dom";
 
 function Header() {
