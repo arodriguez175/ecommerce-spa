@@ -5,7 +5,9 @@ import { Link } from "react-router-dom";
 function Header() {
   return (
     <div className="header">
-      <Link to="/">logo</Link>
+      <Link to="/" className="text-red-500">
+        Mercury
+      </Link>
       <Link to="/signin">Sign in</Link>
       <Link to="/cart">Cart</Link>
       <Menu />
