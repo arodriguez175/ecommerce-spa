@@ -4,12 +4,12 @@ import "./output.css";
 import "./index.css";
 import App from "./App";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import About from "./components/menu/about/About";
-import Contact from "./components/menu/contact/Contact";
-import SignIn from "./components/signin/SignIn";
-import Cart from "./components/cart/Cart";
-import Men from "./components/men/Men";
-import Women from "./components/women/Women";
+import About from "./components/menu/About";
+import Contact from "./components/menu/Contact";
+import SignIn from "./components/SignIn";
+import Cart from "./components/Cart";
+import Men from "./components/Men";
+import Women from "./components/Women";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
