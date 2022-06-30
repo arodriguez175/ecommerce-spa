@@ -549,6 +549,19 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.fixed {
+  position: fixed;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.inset-x-0 {
+  left: 0px;
+  right: 0px;
+}
+
 .bottom-0 {
   bottom: 0px;
 }
@@ -723,6 +736,14 @@ video {
   cursor: not-allowed;
 }
 
+.snap-center {
+  scroll-snap-align: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
 .justify-start {
   justify-content: flex-start;
 }
@@ -854,6 +875,10 @@ video {
 
 .pt-6 {
   padding-top: 1.5rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .align-middle {
