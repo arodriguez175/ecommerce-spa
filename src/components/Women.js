@@ -1,7 +1,7 @@
 function Women() {
   return (
     <div className="women">
-      <p>Women</p>
+      <h2>Women's Shoes</h2>
     </div>
   );
 }

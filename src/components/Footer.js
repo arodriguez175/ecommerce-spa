@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <div className="footer">
-      <div className="absolute bottom-0">
+      <div className="bottom-0">
         <p>footer</p>
       </div>
     </div>
