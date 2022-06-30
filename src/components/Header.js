@@ -1,20 +1,73 @@
-import Menu from "./menu/Menu";
 import Search from "./Search";
 import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <div className="header">
-      <div>
-        <Link to="/" className="text-red-500">
+      <div className="flex gap-4 p-6">
+        <Link to="/" className="text-red-500 p-3">
           Mercury
         </Link>
-        <Link to="/signin">Sign in</Link>
-        <Link to="/cart">Cart</Link>
-        <Menu />
-        <Link to="/men">Men</Link>
-        <Link to="/women">Women</Link>
+
+        <Link
+          to="/"
+          className="hover:border gainsboro-100
+          rounded p-3"
+        >
+          Home
+        </Link>
+
+        <Link
+          to="about"
+          className="hover:border gainsboro-100 
+          rounded p-3"
+        >
+          About
+        </Link>
+
+        <Link
+          to="contact"
+          className="hover:border gainsboro-100 
+          rounded p-3"
+        >
+          Contact
+        </Link>
+
+        <Link
+          to="/men"
+          className="hover:bg-[#363636] hover:text-white 
+          border gainsboro-100 
+          rounded p-3"
+        >
+          Men
+        </Link>
+
+        <Link
+          to="/women"
+          className="hover:bg-[#363636] hover:text-white 
+          border gainsboro-100 
+          rounded p-3"
+        >
+          Women
+        </Link>
+
         <Search />
+
+        <Link
+          to="/signin"
+          className="hover:border gainsboro-100 
+          rounded p-3"
+        >
+          Sign in
+        </Link>
+
+        <Link
+          to="/cart"
+          className="hover:border gainsboro-100 
+          rounded p-3"
+        >
+          Cart
+        </Link>
       </div>
     </div>
   );
