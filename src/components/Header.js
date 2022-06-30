@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Header() {
   return (
     <div className="header">
-      <div className="flex gap-4 p-6">
+      <div className="flex gap-4">
         <Link to="/" className="text-red-500 p-3">
           Mercury
         </Link>
