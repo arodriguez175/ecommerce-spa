@@ -11,7 +11,8 @@ function Header() {
 
         <Link
           to="/"
-          className="hover:border gainsboro-100
+          className="hover:border gainsboro-100 
+          hover:m-[-1px]
           rounded p-3"
         >
           Home
@@ -20,6 +21,7 @@ function Header() {
         <Link
           to="about"
           className="hover:border gainsboro-100 
+          hover:m-[-1px] 
           rounded p-3"
         >
           About
@@ -28,6 +30,7 @@ function Header() {
         <Link
           to="contact"
           className="hover:border gainsboro-100 
+          hover:m-[-1px] 
           rounded p-3"
         >
           Contact
@@ -56,6 +59,7 @@ function Header() {
         <Link
           to="/signin"
           className="hover:border gainsboro-100 
+          hover:m-[-1px] 
           rounded p-3"
         >
           Sign in
@@ -64,6 +68,7 @@ function Header() {
         <Link
           to="/cart"
           className="hover:border gainsboro-100 
+          hover:m-[-1px] 
           rounded p-3"
         >
           Cart
