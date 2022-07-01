@@ -10,6 +10,7 @@ import SignIn from "./components/SignIn";
 import Cart from "./components/Cart";
 import Men from "./components/Men";
 import Women from "./components/Women";
+import Shoe from "./components/Shoe";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -23,6 +24,7 @@ root.render(
         <Route path="cart" element={<Cart />} />
         <Route path="men" element={<Men />} />
         <Route path="women" element={<Women />} />
+        <Route path="shoe" element={<Shoe />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

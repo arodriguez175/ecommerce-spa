@@ -639,6 +639,10 @@ video {
   box-sizing: border-box;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 .flex {
   display: flex;
 }
@@ -734,6 +738,42 @@ video {
 
 .w-\[71\%\] {
   width: 71%;
+}
+
+.w-0 {
+  width: 0px;
+}
+
+.w-3 {
+  width: 0.75rem;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
+.w-\[200px\] {
+  width: 200px;
+}
+
+.w-\[300px\] {
+  width: 300px;
+}
+
+.w-\[400px\] {
+  width: 400px;
+}
+
+.w-\[30px\] {
+  width: 30px;
+}
+
+.w-\[50px\] {
+  width: 50px;
+}
+
+.w-\[300\] {
+  width: 300;
 }
 
 .cursor-not-allowed {
