@@ -5,16 +5,18 @@ import { Link } from "react-router-dom";
 function Men() {
   return (
     <div className="men">
-      <h2>Men's Shoes</h2>
-      {mensShoes.map((mensShoes) => (
-        <Link to="shoe" className="inline-block w-[300px]">
-          <Shoe
-            image={mensShoes.imageURL}
-            name={mensShoes.name}
-            price={mensShoes.price}
-          />
-        </Link>
-      ))}
+      <h2 className="text-center">Men's Shoes</h2>
+      <div className="grid grid-cols-3 gap-4">
+        {mensShoes.map((mensShoes) => (
+          <Link to="shoe">
+            <Shoe
+              image={mensShoes.imageURL}
+              name={mensShoes.name}
+              price={mensShoes.price}
+            />
+          </Link>
+        ))}
+      </div>
     </div>
   );
 }
