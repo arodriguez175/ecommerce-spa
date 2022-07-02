@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function Men() {
   return (
     <div className="men">
-      <h2 className="text-center">Men's Shoes</h2>
+      <h2 className="text-center text-2xl">Men's Shoes</h2>
       <div className="grid grid-cols-3 gap-4">
         {mensShoes.map((mensShoes) => (
           <Link to="shoe">

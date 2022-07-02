@@ -5,7 +5,7 @@ import Shoe from "./Shoe";
 function Women() {
   return (
     <div className="women">
-      <h2 className="text-center">Women's Shoes</h2>
+      <h2 className="text-center text-2xl">Women's Shoes</h2>
       <div className="grid grid-cols-3 gap-4">
         {womensShoes.map((womensShoes) => (
           <Link to="shoe">
