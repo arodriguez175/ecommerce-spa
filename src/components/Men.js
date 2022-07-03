@@ -7,8 +7,8 @@ function Men() {
     <div className="men">
       <h2 className="text-center text-2xl">Men's Shoes</h2>
       <div className="grid grid-cols-3 gap-4">
-        {mensShoes.map((mensShoes, index) => (
-          <Link to="shoe" key={index}>
+        {mensShoes.map((mensShoes) => (
+          <Link to="shoe" key={mensShoes.id}>
             <Shoe
               image={mensShoes.imageURL}
               name={mensShoes.name}
