@@ -12,7 +12,9 @@ function ShoePage() {
     <div>
       <h2>Shoe Page</h2>
       {params.shoeId}
+      <img src={shoe.imageURL} />
       {shoe ? <p>{shoe.name}</p> : <p>Sorry, this shoe does not exist</p>}
+      <p>${shoe.price}</p>
     </div>
   );
 }
