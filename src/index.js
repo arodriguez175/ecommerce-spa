@@ -12,23 +12,27 @@ import Men from "./components/Men";
 import Women from "./components/Women";
 import Layout from "./components/Layout";
 import ShoePage from "./components/ShoePage";
+import store from "./store";
+import { Provider } from "react-redux";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<App />} />
-          <Route path="about" element={<About />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="signin" element={<SignIn />} />
-          <Route path="cart" element={<Cart />} />
-          <Route path="shoes/:shoeId" element={<ShoePage />} />
-          <Route path="men" element={<Men />} />
-          <Route path="women" element={<Women />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <Provider store={store}>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<App />} />
+            <Route path="about" element={<About />} />
+            <Route path="contact" element={<Contact />} />
+            <Route path="signin" element={<SignIn />} />
+            <Route path="cart" element={<Cart />} />
+            <Route path="shoes/:shoeId" element={<ShoePage />} />
+            <Route path="men" element={<Men />} />
+            <Route path="women" element={<Women />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </Provider>
   </React.StrictMode>
 );

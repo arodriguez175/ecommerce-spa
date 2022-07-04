@@ -7,7 +7,7 @@ export const mensShoes = [
     price: 100,
     sku: "",
     sizes: [],
-    gender: [],
+    gender: ["men"],
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ export const mensShoes = [
     price: 100,
     sku: "",
     sizes: [],
-    gender: [],
+    gender: ["men"],
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ export const mensShoes = [
     price: 130,
     sku: "",
     sizes: [],
-    gender: [],
+    gender: ["men"],
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ export const mensShoes = [
     price: 136,
     sku: "",
     sizes: [],
-    gender: [],
+    gender: ["men", "women"],
   },
   {
     id: 5,
@@ -47,7 +47,7 @@ export const mensShoes = [
     price: 175,
     sku: "",
     sizes: [],
-    gender: [],
+    gender: ["men"],
   },
   {
     id: 6,
@@ -57,69 +57,59 @@ export const mensShoes = [
     price: 140,
     sku: "",
     sizes: [],
-    gender: [],
+    gender: ["men"],
   },
 ];
 
 export const womensShoes = [
   {
-    id: 1,
+    id: 7,
     imageURL:
       "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/5f78e28d-43e4-4a95-8bd9-7dfb8cfc3d7f/air-zoom-pegasus-39-womens-road-running-shoes-Wck51L.png",
     name: "Nike Air Zoom Pegasus 39",
     price: 130,
     sku: "",
     sizes: [],
-    gender: [],
+    gender: ["women"],
   },
   {
-    id: 2,
+    id: 8,
     imageURL:
       "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b8ad5aaa-4f0a-4022-be29-f0c1b7ff3c92/air-wio-9-womens-road-running-shoes-SJhkXz.png",
     name: "Nike Air Winflo 9",
     price: 100,
     sku: "",
     sizes: [],
-    gender: [],
+    gender: ["women"],
   },
   {
-    id: 3,
+    id: 9,
     imageURL:
       "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/23a75557-3d43-4cfd-994b-f7d9c966e54d/blazer-low-platform-womens-shoes-X8Nl4M.png",
     name: "Nike Blazer Low Platform",
     price: 95,
     sku: "",
     sizes: [],
-    gender: [],
+    gender: ["women"],
   },
   {
-    id: 4,
+    id: 10,
     imageURL:
       "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e4fdd0ab-cfbe-4abf-b735-2bd5e78b6065/blazer-mid-77-womens-shoes-pNnkgJ.png",
     name: "Nike Blazer Mid '77",
     price: 110,
     sku: "",
     sizes: [],
-    gender: [],
+    gender: ["women"],
   },
   {
-    id: 5,
-    imageURL:
-      "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4b22c0bd-8179-42a2-aa74-e82a95fbc11e/air-max-270-womens-shoes-Pgb94t.png",
-    name: "Nike Air Max 270",
-    price: 150,
-    sku: "",
-    sizes: [],
-    gender: [],
-  },
-  {
-    id: 6,
+    id: 11,
     imageURL:
       "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/8318246f-49e8-4677-afb2-77442b7e175f/metcon-7-womens-training-shoes-wgK0XX.png",
     name: "Nike Metcon 7",
     price: 130,
     sku: "",
     sizes: [],
-    gender: [],
+    gender: ["women"],
   },
 ];
