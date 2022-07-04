@@ -112,4 +112,14 @@ export const womensShoes = [
     sizes: [],
     gender: ["women"],
   },
+  {
+    id: 12,
+    imageURL:
+      "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/c19fba65-17fd-400f-90a4-dc1630151c16/zoomx-invincible-run-flyknit-womens-running-shoe-kVqSJ8.png",
+    name: "Nike XoomX Invincible Run Flyknit",
+    price: 180,
+    sku: "",
+    sizes: [],
+    gender: ["women"],
+  },
 ];
