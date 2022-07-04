@@ -7,12 +7,9 @@ import Women from "./components/Women";
 function App() {
   return (
     <div className="App">
-      <div className="pt-6 px-6">
-        <Header />
-        <Outlet />
+      <div>
         <Men />
         <Women />
-        <Footer />
       </div>
     </div>
   );

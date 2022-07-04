@@ -1,22 +1,22 @@
 import { mensShoes } from "../mocks";
-import Shoe from "./Shoe";
-import { Link } from "react-router-dom";
+import ShoeCard from "./ShoeCard";
+import { Outlet } from "react-router-dom";
 
 function Men() {
   return (
     <div className="men">
       <h2 className="text-center text-2xl">Men's Shoes</h2>
       <div className="grid grid-cols-3 gap-4">
-        {mensShoes.map((mensShoes) => (
-          <Link to="shoe" key={mensShoes.id}>
-            <Shoe
-              image={mensShoes.imageURL}
-              name={mensShoes.name}
-              price={mensShoes.price}
-            />
-          </Link>
+        {mensShoes.map((shoe) => (
+          <ShoeCard
+            id={shoe.id}
+            image={shoe.imageURL}
+            name={shoe.name}
+            price={shoe.price}
+          />
         ))}
       </div>
+      <Outlet />
     </div>
   );
 }

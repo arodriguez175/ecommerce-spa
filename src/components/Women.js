@@ -1,6 +1,6 @@
 import { womensShoes } from "../mocks";
 import { Link } from "react-router-dom";
-import Shoe from "./Shoe";
+import ShoeCard from "./ShoeCard";
 
 function Women() {
   return (
@@ -9,7 +9,7 @@ function Women() {
       <div className="grid grid-cols-3 gap-4">
         {womensShoes.map((womensShoes) => (
           <Link to="shoe" key={womensShoes.id}>
-            <Shoe
+            <ShoeCard
               image={womensShoes.imageURL}
               name={womensShoes.name}
               price={womensShoes.price}

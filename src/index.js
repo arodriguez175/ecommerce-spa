@@ -10,21 +10,24 @@ import SignIn from "./components/SignIn";
 import Cart from "./components/Cart";
 import Men from "./components/Men";
 import Women from "./components/Women";
-import Shoe from "./components/Shoe";
+import Layout from "./components/Layout";
+import ShoePage from "./components/ShoePage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="about" element={<About />} />
-        <Route path="contact" element={<Contact />} />
-        <Route path="signin" element={<SignIn />} />
-        <Route path="cart" element={<Cart />} />
-        <Route path="men" element={<Men />} />
-        <Route path="women" element={<Women />} />
-        <Route path="shoe" element={<Shoe />} />
+        <Route path="/" element={<Layout />}>
+          <Route index element={<App />} />
+          <Route path="about" element={<About />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="signin" element={<SignIn />} />
+          <Route path="cart" element={<Cart />} />
+          <Route path="shoes/:shoeId" element={<ShoePage />} />
+          <Route path="men" element={<Men />} />
+          <Route path="women" element={<Women />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
