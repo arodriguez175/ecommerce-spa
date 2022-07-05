@@ -1,6 +1,5 @@
 import { mensShoes } from "../mocks";
 import ShoeCard from "./ShoeCard";
-import { Outlet } from "react-router-dom";
 
 function Men() {
   return (
@@ -17,7 +16,6 @@ function Men() {
           />
         ))}
       </div>
-      <Outlet />
     </div>
   );
 }
