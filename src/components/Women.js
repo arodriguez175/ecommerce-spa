@@ -4,8 +4,8 @@ import ShoeCard from "./ShoeCard";
 function Women() {
   return (
     <div className="women">
-      <h2 className="text-center text-2xl">Women's Shoes</h2>
-      <div className="grid grid-cols-3 gap-4">
+      <h2 className="text-center text-2xl m-6">Women's Shoes</h2>
+      <div className="grid grid-cols-3 gap-10 mx-20">
         {womensShoes.map((shoe) => (
           <ShoeCard
             key={shoe.id}

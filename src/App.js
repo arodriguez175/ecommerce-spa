@@ -1,6 +1,3 @@
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import { Outlet } from "react-router-dom";
 import Men from "./components/Men";
 import Women from "./components/Women";
 

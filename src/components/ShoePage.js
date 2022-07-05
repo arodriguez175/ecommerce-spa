@@ -12,9 +12,13 @@ function ShoePage() {
     <div>
       <h2>Shoe Page</h2>
       {params.shoeId}
-      <img src={shoe.imageURL} className="drop-shadow-md" />
-      {shoe ? <p>{shoe.name}</p> : <p>Sorry, this shoe does not exist</p>}
-      <p>${shoe.price}</p>
+      <img src={shoe.imageURL} className="drop-shadow-md rounded-xl w-[40%]" />
+      {shoe ? (
+        <p className="text-[16pt]">{shoe.name}</p>
+      ) : (
+        <p>Sorry, this shoe does not exist</p>
+      )}
+      <p className="text-[16pt]">${shoe.price}</p>
     </div>
   );
 }
