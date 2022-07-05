@@ -728,6 +728,10 @@ video {
   height: 50%;
 }
 
+.h-\[400px\] {
+  height: 400px;
+}
+
 .max-h-10 {
   max-height: 2.5rem;
 }
@@ -895,6 +899,10 @@ video {
 
 .w-\[150px\] {
   width: 150px;
+}
+
+.w-\[900px\] {
+  width: 900px;
 }
 
 .cursor-not-allowed {

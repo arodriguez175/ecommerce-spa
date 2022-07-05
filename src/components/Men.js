@@ -9,6 +9,7 @@ function Men() {
       <div className="grid grid-cols-3 gap-4">
         {mensShoes.map((shoe) => (
           <ShoeCard
+            key={shoe.id}
             id={shoe.id}
             image={shoe.imageURL}
             name={shoe.name}
