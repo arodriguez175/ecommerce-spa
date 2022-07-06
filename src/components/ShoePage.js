@@ -10,7 +10,7 @@ function ShoePage() {
   );
   return (
     <div className="mx-20">
-      <h2 className="text-center text-2xl m-6">Shoe Page</h2>
+      <h2 className="text-center text-2xl m-5">Shoe Page</h2>
 
       <div className="flex">
         <img
@@ -25,6 +25,22 @@ function ShoePage() {
             <p>Sorry, this shoe does not exist</p>
           )}
           <p className="text-[16pt]">${shoe.price}</p>
+
+          <div className="grid grid-cols-5">
+            {shoe.sizes.map((size) => (
+              <div>
+                <label className="border">
+                  {size}
+                  <input type="radio" name="radioSize" value={size.index} />
+                </label>
+              </div>
+            ))}
+          </div>
+
+          <div>
+            <button>Add to Cart</button>
+            <button>Save to List</button>
+          </div>
         </div>
       </div>
     </div>
