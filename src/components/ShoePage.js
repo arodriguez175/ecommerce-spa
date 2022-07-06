@@ -26,18 +26,29 @@ function ShoePage() {
           )}
           <p className="text-[16pt]">${shoe.price}</p>
 
-          <div className="grid grid-cols-5">
+          <div className="grid grid-cols-5 gap-1">
             {shoe.sizes.map((size) => (
-              <div>
-                <label className="border">
-                  {size}
-                  <input type="radio" name="radioSize" value={size.index} />
-                </label>
-              </div>
+              <label
+                className="border
+                text-center 
+                rounded 
+                p-2 px-5 
+                hover:bg-[#363636] 
+                hover:text-white 
+                hover:cursor-pointer"
+              >
+                {size}
+                <input
+                  className="opacity-0 w-0"
+                  type="radio"
+                  name="radioSize"
+                  value={size.index}
+                />
+              </label>
             ))}
           </div>
 
-          <div>
+          <div className="border">
             <button>Add to Cart</button>
             <button>Save to List</button>
           </div>
