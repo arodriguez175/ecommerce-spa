@@ -9,16 +9,24 @@ function ShoePage() {
     )
   );
   return (
-    <div>
-      <h2>Shoe Page</h2>
-      {params.shoeId}
-      <img src={shoe.imageURL} className="drop-shadow-md rounded-xl w-[40%]" />
-      {shoe ? (
-        <p className="text-[16pt]">{shoe.name}</p>
-      ) : (
-        <p>Sorry, this shoe does not exist</p>
-      )}
-      <p className="text-[16pt]">${shoe.price}</p>
+    <div className="mx-20">
+      <h2 className="text-center text-2xl m-6">Shoe Page</h2>
+
+      <div className="flex">
+        <img
+          src={shoe.imageURL}
+          className="drop-shadow-md rounded-xl w-[45%]"
+        />
+
+        <div className="ml-20">
+          {shoe ? (
+            <p className="text-[16pt]">{shoe.name}</p>
+          ) : (
+            <p>Sorry, this shoe does not exist</p>
+          )}
+          <p className="text-[16pt]">${shoe.price}</p>
+        </div>
+      </div>
     </div>
   );
 }
