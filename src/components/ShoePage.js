@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
+import { useHistory } from "react-router-dom";
 
 function ShoePage() {
   let params = useParams();
@@ -24,7 +25,7 @@ function ShoePage() {
           )}
           <p className="text-[16pt]">${shoe.price}</p>
 
-          <div className="grid grid-cols-5 gap-1 mt-7">
+          <div className="grid grid-cols-5 gap-1 mt-5">
             {shoe.sizes.map((size) => (
               <label
                 key={size}
@@ -48,16 +49,19 @@ function ShoePage() {
             ))}
           </div>
 
-          <div className="border mt-7 text-center rounded">
+          <div className="border mt-5 justify-center rounded grid w-[400px]">
             <button
               className="bg-[#363636] 
             text-white 
             hover:bg-[#4d4d4d] 
-            w-[80%] p-2 mt-3 mb-3"
+            w-[300px] p-2 mt-3 mb-3
+            rounded"
             >
               Add to Cart
             </button>
-            <button className="border w-[80%] p-2 mb-3">Save to List</button>
+            <button className="border w-[300px] p-2 mb-3 rounded">
+              Save to List
+            </button>
           </div>
         </div>
       </div>

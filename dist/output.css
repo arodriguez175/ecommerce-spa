@@ -1036,6 +1036,34 @@ video {
   width: 80px;
 }
 
+.w-\[314px\] {
+  width: 314px;
+}
+
+.w-\[318px\] {
+  width: 318px;
+}
+
+.w-\[320px\] {
+  width: 320px;
+}
+
+.w-\[330px\] {
+  width: 330px;
+}
+
+.w-\[340px\] {
+  width: 340px;
+}
+
+.w-\[360px\] {
+  width: 360px;
+}
+
+.w-\[380px\] {
+  width: 380px;
+}
+
 .flex-auto {
   flex: 1 1 auto;
 }
