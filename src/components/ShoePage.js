@@ -9,24 +9,22 @@ function ShoePage() {
     )
   );
   return (
-    <div className="mx-20">
-      <h2 className="text-center text-2xl m-5">Shoe Page</h2>
-
+    <div className="mx-20 mt-10">
       <div className="flex">
         <img
           src={shoe.imageURL}
           className="drop-shadow-md rounded-xl w-[45%]"
         />
 
-        <div className="ml-20">
+        <div className="ml-5">
           {shoe ? (
-            <p className="text-[16pt]">{shoe.name}</p>
+            <p className="text-[28pt]">{shoe.name}</p>
           ) : (
             <p>Sorry, this shoe does not exist</p>
           )}
           <p className="text-[16pt]">${shoe.price}</p>
 
-          <div className="grid grid-cols-5 gap-1">
+          <div className="grid grid-cols-5 gap-1 mt-7">
             {shoe.sizes.map((size) => (
               <label
                 key={size}
@@ -50,9 +48,16 @@ function ShoePage() {
             ))}
           </div>
 
-          <div className="border">
-            <button>Add to Cart</button>
-            <button>Save to List</button>
+          <div className="border mt-7 text-center rounded">
+            <button
+              className="bg-[#363636] 
+            text-white 
+            hover:bg-[#4d4d4d] 
+            w-[80%] p-2 mt-3 mb-3"
+            >
+              Add to Cart
+            </button>
+            <button className="border w-[80%] p-2 mb-3">Save to List</button>
           </div>
         </div>
       </div>
