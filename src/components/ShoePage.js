@@ -29,6 +29,7 @@ function ShoePage() {
           <div className="grid grid-cols-5 gap-1">
             {shoe.sizes.map((size) => (
               <label
+                key={size}
                 className="border
                 text-center 
                 rounded 
@@ -39,6 +40,7 @@ function ShoePage() {
               >
                 {size}
                 <input
+                  key={size}
                   className="opacity-0 w-0"
                   type="radio"
                   name="radioSize"
