@@ -1,8 +1,15 @@
 import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { actionColor, hoverColor, hoverTextColor } from "../constants";
+import {
+  actionColor,
+  disabledActionColor,
+  hoverColor,
+  hoverTextColor,
+} from "../constants";
+import { useState } from "react";
 
 function ShoePage() {
+  const [selectedSize, setSelectedSize] = useState("");
   let params = useParams();
   const shoe = useSelector((state) =>
     state.shoeCatalog.shoes.find(
@@ -24,36 +31,45 @@ function ShoePage() {
             <p className="text-[28pt]">{shoe.name}</p>
             <p className="text-[16pt]">${shoe.price}</p>
             <div className="grid grid-cols-5 gap-1 mt-5">
-              {shoe.sizes.map((size) => (
-                <label
-                  key={size}
-                  className={`border
+              {shoe.sizes.map((size) => {
+                const selectedStyles = `bg-[${actionColor}] text-${hoverTextColor}`;
+                return (
+                  <label
+                    key={size}
+                    className={`border
                   text-center
                   rounded
                   p-2 px-5
                 hover:bg-[${actionColor}]
                 hover:text-${hoverTextColor}
-                hover:cursor-pointer`}
-                >
-                  {size}
-                  <input
-                    key={size}
-                    className="opacity-0 w-0"
-                    type="radio"
-                    name="radioSize"
-                    value={size.index}
-                  />
-                </label>
-              ))}
+                hover:cursor-pointer
+                ${size == selectedSize ? selectedStyles : ""}`}
+                  >
+                    {size}
+                    <input
+                      onChange={(event) => {
+                        setSelectedSize(event.target.value);
+                      }}
+                      className="opacity-0 w-0"
+                      type="radio"
+                      name="radioSize"
+                      value={size}
+                    />
+                  </label>
+                );
+              })}
             </div>
-
+            {/* */}
             <div className="border mt-5 justify-center rounded grid w-[400px]">
               <button
-                className={`bg-[${actionColor}]
-              text-${hoverTextColor}
-              hover:bg-[${hoverColor}]
+                className={`
+                bg-[${selectedSize ? actionColor : disabledActionColor}]
+                text-${hoverTextColor}
+                hover:bg-[${hoverColor}]
                 w-[300px] p-2 mt-3 mb-3
-                rounded`}
+                rounded
+                `}
+                disabled={!selectedSize}
               >
                 Add to Cart
               </button>
