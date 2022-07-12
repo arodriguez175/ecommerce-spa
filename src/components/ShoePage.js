@@ -12,11 +12,14 @@ function ShoePage() {
     <div className="mx-20 mt-10">
       {shoe ? (
         <div className="flex">
-          <div className="">
-            <img src={shoe.imageURL} className="drop-shadow-md rounded-xl" />
+          <div>
+            <img
+              src={shoe.imageURL}
+              className="drop-shadow-md rounded-xl w-[90%]"
+            />
           </div>
 
-          <div className="ml-5">
+          <div>
             <p className="text-[28pt]">{shoe.name}</p>
             <p className="text-[16pt]">${shoe.price}</p>
             <div className="grid grid-cols-5 gap-1 mt-5">
