@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
+import { actionColor, hoverColor, hoverTextColor } from "../constants";
 
 function ShoePage() {
   let params = useParams();
@@ -26,13 +27,13 @@ function ShoePage() {
               {shoe.sizes.map((size) => (
                 <label
                   key={size}
-                  className="border
+                  className={`border
                   text-center
                   rounded
                   p-2 px-5
-                hover:bg-[#363636]
-                hover:text-white
-                hover:cursor-pointer"
+                hover:bg-[${actionColor}]
+                hover:text-${hoverTextColor}
+                hover:cursor-pointer`}
                 >
                   {size}
                   <input
@@ -48,11 +49,11 @@ function ShoePage() {
 
             <div className="border mt-5 justify-center rounded grid w-[400px]">
               <button
-                className="bg-[#363636]
-              text-white
-              hover:bg-[#4d4d4d]
+                className={`bg-[${actionColor}]
+              text-${hoverTextColor}
+              hover:bg-[${hoverColor}]
                 w-[300px] p-2 mt-3 mb-3
-                rounded"
+                rounded`}
               >
                 Add to Cart
               </button>

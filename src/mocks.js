@@ -16,7 +16,7 @@ export const mensShoes = [
     name: "Nike Air Force 1 '07",
     price: 100,
     sku: "",
-    sizes: [],
+    sizes: [7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 14, 15],
     gender: ["men"],
   },
   {
@@ -26,7 +26,7 @@ export const mensShoes = [
     name: "Nike Air Xoom Pegasus 39",
     price: 130,
     sku: "",
-    sizes: [],
+    sizes: [7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 14, 15],
     gender: ["men"],
   },
   {
@@ -36,7 +36,10 @@ export const mensShoes = [
     name: "Nike Air Max 270",
     price: 136,
     sku: "",
-    sizes: [],
+    sizes: [
+      5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13,
+      14, 15,
+    ],
     gender: ["men", "women"],
   },
   {
@@ -46,7 +49,7 @@ export const mensShoes = [
     name: "Nike Air Max 97",
     price: 175,
     sku: "",
-    sizes: [],
+    sizes: [7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 14, 15],
     gender: ["men"],
   },
   {
@@ -56,7 +59,7 @@ export const mensShoes = [
     name: "Nike Air Max Plus",
     price: 140,
     sku: "",
-    sizes: [],
+    sizes: [7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 14, 15],
     gender: ["men"],
   },
 ];
@@ -69,7 +72,7 @@ export const womensShoes = [
     name: "Nike Air Zoom Pegasus 39",
     price: 130,
     sku: "",
-    sizes: [],
+    sizes: [7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 14, 15],
     gender: ["women"],
   },
   {
@@ -79,7 +82,7 @@ export const womensShoes = [
     name: "Nike Air Winflo 9",
     price: 100,
     sku: "",
-    sizes: [],
+    sizes: [7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 14, 15],
     gender: ["women"],
   },
   {
@@ -89,7 +92,7 @@ export const womensShoes = [
     name: "Nike Blazer Low Platform",
     price: 95,
     sku: "",
-    sizes: [],
+    sizes: [7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 14, 15],
     gender: ["women"],
   },
   {
@@ -99,7 +102,7 @@ export const womensShoes = [
     name: "Nike Blazer Mid '77",
     price: 110,
     sku: "",
-    sizes: [],
+    sizes: [7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 14, 15],
     gender: ["women"],
   },
   {
@@ -109,7 +112,7 @@ export const womensShoes = [
     name: "Nike Metcon 7",
     price: 130,
     sku: "",
-    sizes: [],
+    sizes: [7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 14, 15],
     gender: ["women"],
   },
   {
@@ -119,7 +122,7 @@ export const womensShoes = [
     name: "Nike XoomX Invincible Run Flyknit",
     price: 180,
     sku: "",
-    sizes: [],
+    sizes: [7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 14, 15],
     gender: ["women"],
   },
 ];
