@@ -1,0 +1,9 @@
+.disabled {
+  --th-primary: #999;
+  --th-primary-text: black;
+}
+
+.selected {
+  --th-text: white;
+  --th-secondary: var(--th-primary);
+}
