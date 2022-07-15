@@ -1,12 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
-import {
-  actionColor,
-  disabledActionColor,
-  hoverColor,
-  hoverTextColor,
-} from "../constants";
 import { useState } from "react";
+import "./ShoePage.css";
 
 function ShoePage() {
   const [selectedSize, setSelectedSize] = useState("");
@@ -32,7 +27,6 @@ function ShoePage() {
             <p className="text-[16pt]">${shoe.price}</p>
             <div className="grid grid-cols-5 gap-1 mt-5">
               {shoe.sizes.map((size) => {
-                const selectedStyles = `bg-[${actionColor}] text-${hoverTextColor}`;
                 return (
                   <label
                     key={size}
@@ -40,10 +34,12 @@ function ShoePage() {
                   text-center
                   rounded
                   p-2 px-5
-                hover:bg-[${actionColor}]
-                hover:text-${hoverTextColor}
+                hover:bg-shoe-hover
+                hover:text-shoe-text-hover
                 hover:cursor-pointer
-                ${size == selectedSize ? selectedStyles : ""}`}
+                text-shoe-text
+                bg-shoe-option
+                ${size == selectedSize ? "selected" : ""}`}
                   >
                     {size}
                     <input
@@ -63,11 +59,13 @@ function ShoePage() {
             <div className="border mt-5 justify-center rounded grid w-[400px]">
               <button
                 className={`
-                bg-[${selectedSize ? actionColor : disabledActionColor}]
-                text-${hoverTextColor}
-                hover:bg-[${hoverColor}]
+                bg-shoe-primary
+                text-shoe-primary-text
+                hover:text-shoe-text-hover
+                hover:bg-shoe-hover
                 w-[300px] p-2 mt-3 mb-3
                 rounded
+                ${!selectedSize && "disabled"}
                 `}
                 disabled={!selectedSize}
               >
