@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --th-primary: #363636;
+  --th-primary-text: white;
+  --th-secondary: white;
+  --th-hover: #4d4d4d;
+  --th-text: black;
+}
