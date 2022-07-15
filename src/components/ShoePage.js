@@ -37,13 +37,13 @@ function ShoePage() {
                   <label
                     key={size}
                     className={`border
-                  text-center
-                  rounded
-                  p-2 px-5
-                hover:bg-[${actionColor}]
-                hover:text-${hoverTextColor}
-                hover:cursor-pointer
-                ${size == selectedSize ? selectedStyles : ""}`}
+                    text-center
+                    rounded
+                    p-2 px-5
+                    hover:bg-[${actionColor}]
+                    hover:text-${hoverTextColor}
+                    hover:cursor-pointer
+                    ${size == selectedSize ? selectedStyles : ""}`}
                   >
                     {size}
                     <input
