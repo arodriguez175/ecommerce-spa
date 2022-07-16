@@ -34,10 +34,12 @@ function ShoePage() {
                     text-center
                     rounded
                     p-2 px-5
-                    hover:bg-[${actionColor}]
-                    hover:text-${hoverTextColor}
+                    hover:bg-shoe-hover
+                  hover:text-shoe-text-hover
                     hover:cursor-pointer
-                    ${size == selectedSize ? selectedStyles : ""}`}
+                    text-shoe-text
+                    bg-shoe-option
+                    ${size == selectedSize ? "selected" : ""}`}
                   >
                     {size}
                     <input
