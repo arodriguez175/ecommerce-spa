@@ -38,7 +38,7 @@ function Header() {
 
         <Link
           to="/men"
-          className="hover:bg-[#363636] hover:text-white 
+          className="hover:bg-[#363636] hover:text-shoe-text-hover 
           border gainsboro-100 
           rounded p-3"
         >
@@ -47,7 +47,7 @@ function Header() {
 
         <Link
           to="/women"
-          className="hover:bg-[#363636] hover:text-white 
+          className="hover:bg-[#363636] hover:text-shoe-text-hover  
           border gainsboro-100 
           rounded p-3"
         >

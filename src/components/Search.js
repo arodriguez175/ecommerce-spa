@@ -13,7 +13,7 @@ function Search() {
         />
         <button
           className="bg-[#363636] 
-          text-white 
+          text-shoe-text-hover 
           ml-1 
           rounded 
           p-3
