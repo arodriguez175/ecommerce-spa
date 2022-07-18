@@ -1,9 +1,11 @@
 import { useParams } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { useState } from "react";
 import "./ShoePage.css";
+import { addToCart } from "../features/cart/cartSlice";
 
 function ShoePage() {
+  const dispatch = useDispatch();
   const [selectedSize, setSelectedSize] = useState("");
   let params = useParams();
   const shoe = useSelector((state) =>
@@ -11,6 +13,16 @@ function ShoePage() {
       (pairOfShoes) => pairOfShoes.id === parseInt(params.shoeId)
     )
   );
+
+  const handleAddToCart = () => {
+    const { id } = shoe;
+    const selectedShoe = {
+      id,
+      size: selectedSize,
+    };
+    dispatch(addToCart(selectedShoe));
+  };
+
   return (
     <div className="mx-20 mt-10">
       {shoe ? (
@@ -58,6 +70,7 @@ function ShoePage() {
             {/* */}
             <div className="border mt-5 justify-center rounded grid w-[400px]">
               <button
+                onClick={handleAddToCart}
                 className={`
                 bg-shoe-primary
                 text-shoe-primary-text
