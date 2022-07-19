@@ -5,6 +5,8 @@ import "./ShoePage.css";
 import { addToCart } from "../features/cart/cartSlice";
 
 function ShoePage() {
+  const initialCartButtonText = "Add to Cart";
+  const [cartButtonText, setCartButtonText] = useState(initialCartButtonText);
   const dispatch = useDispatch();
   const [selectedSize, setSelectedSize] = useState("");
   let params = useParams();
@@ -21,6 +23,11 @@ function ShoePage() {
       size: selectedSize,
     };
     dispatch(addToCart(selectedShoe));
+
+    setCartButtonText("Added to Cart");
+    setTimeout(() => {
+      setCartButtonText(initialCartButtonText);
+    }, 1000);
   };
 
   return (
@@ -82,7 +89,7 @@ function ShoePage() {
                 `}
                 disabled={!selectedSize}
               >
-                Add to Cart
+                {cartButtonText}
               </button>
               <button className="border w-[300px] p-2 mb-3 rounded">
                 Save to List
