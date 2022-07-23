@@ -44,6 +44,9 @@ function ShoePage() {
           <div>
             <p className="text-[28pt]">{shoe.name}</p>
             <p className="text-[16pt]">${shoe.price}</p>
+            <p>{shoe.shown}</p>
+            <p>{shoe.style}</p>
+
             <div className="grid grid-cols-5 gap-1 mt-5">
               {shoe.sizes.map((size) => {
                 return (
@@ -58,7 +61,7 @@ function ShoePage() {
                     hover:cursor-pointer
                     text-shoe-text
                     bg-shoe-option
-                    ${size == selectedSize ? "selected" : ""}`}
+                    ${size === selectedSize ? "selected" : ""}`}
                   >
                     {size}
                     <input
@@ -74,7 +77,7 @@ function ShoePage() {
                 );
               })}
             </div>
-            {/* */}
+
             <div className="border mt-5 justify-center rounded grid w-[400px]">
               <button
                 onClick={handleAddToCart}
