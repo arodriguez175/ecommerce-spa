@@ -74,7 +74,7 @@ function Header() {
           hover:m-[-1px] 
           rounded p-3"
         >
-          Cart {cartLength}
+          Cart <span className="cartText">{cartLength}</span>
         </Link>
       </div>
     </div>
