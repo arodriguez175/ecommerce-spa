@@ -44,8 +44,6 @@ function ShoePage() {
           <div>
             <p className="text-[28pt]">{shoe.name}</p>
             <p className="text-[16pt]">${shoe.price}</p>
-            <p>{shoe.shown}</p>
-            <p>{shoe.style}</p>
 
             <div className="grid grid-cols-5 gap-1 mt-5">
               {shoe.sizes.map((size) => {
@@ -97,6 +95,11 @@ function ShoePage() {
               <button className="border w-[300px] p-2 mb-3 rounded">
                 Save to List
               </button>
+            </div>
+
+            <div className="mt-5">
+              <li>Shown: {shoe.shown}</li>
+              <li>Style: {shoe.style}</li>
             </div>
           </div>
         </div>
