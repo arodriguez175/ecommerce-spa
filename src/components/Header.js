@@ -74,7 +74,7 @@ function Header() {
           hover:m-[-1px] 
           rounded p-3"
         >
-          Cart <span className="cartNumber absolute">{cartLength}</span>
+          Bag <span className="cartNumber absolute">{cartLength}</span>
         </Link>
       </div>
     </div>
