@@ -98,8 +98,8 @@ function ShoePage() {
             </div>
 
             <div className="mt-5">
-              <li>Shown: {shoe.shown}</li>
-              <li>Style: {shoe.style}</li>
+              <li>Color: {shoe.color}</li>
+              <li>Sku: {shoe.sku}</li>
             </div>
           </div>
         </div>
