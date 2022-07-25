@@ -1,9 +1,13 @@
 import { useParams } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { useState } from "react";
 import "./ShoePage.css";
+import { addToCart } from "../features/cart/cartSlice";
 
 function ShoePage() {
+  const initialCartButtonText = "Add to Cart";
+  const [cartButtonText, setCartButtonText] = useState(initialCartButtonText);
+  const dispatch = useDispatch();
   const [selectedSize, setSelectedSize] = useState("");
   let params = useParams();
   const shoe = useSelector((state) =>
@@ -11,6 +15,21 @@ function ShoePage() {
       (pairOfShoes) => pairOfShoes.id === parseInt(params.shoeId)
     )
   );
+
+  const handleAddToCart = () => {
+    const { id } = shoe;
+    const selectedShoe = {
+      id,
+      size: selectedSize,
+    };
+    dispatch(addToCart(selectedShoe));
+
+    setCartButtonText("Added to Cart");
+    setTimeout(() => {
+      setCartButtonText(initialCartButtonText);
+    }, 1000);
+  };
+
   return (
     <div className="mx-20 mt-10">
       {shoe ? (
@@ -25,6 +44,7 @@ function ShoePage() {
           <div>
             <p className="text-[28pt]">{shoe.name}</p>
             <p className="text-[16pt]">${shoe.price}</p>
+
             <div className="grid grid-cols-5 gap-1 mt-5">
               {shoe.sizes.map((size) => {
                 return (
@@ -39,7 +59,7 @@ function ShoePage() {
                     hover:cursor-pointer
                     text-shoe-text
                     bg-shoe-option
-                    ${size == selectedSize ? "selected" : ""}`}
+                    ${size === selectedSize ? "selected" : ""}`}
                   >
                     {size}
                     <input
@@ -55,9 +75,10 @@ function ShoePage() {
                 );
               })}
             </div>
-            {/* */}
+
             <div className="border mt-5 justify-center rounded grid w-[400px]">
               <button
+                onClick={handleAddToCart}
                 className={`
                 bg-shoe-primary
                 text-shoe-primary-text
@@ -69,11 +90,16 @@ function ShoePage() {
                 `}
                 disabled={!selectedSize}
               >
-                Add to Cart
+                {cartButtonText}
               </button>
               <button className="border w-[300px] p-2 mb-3 rounded">
                 Save to List
               </button>
+            </div>
+
+            <div className="mt-5">
+              <li>Color: {shoe.color}</li>
+              <li>Sku: {shoe.sku}</li>
             </div>
           </div>
         </div>

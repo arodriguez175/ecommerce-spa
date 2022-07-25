@@ -1,7 +1,10 @@
 import Search from "./Search";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 function Header() {
+  const cartLength = useSelector((state) => state.cart.cart.length);
+
   return (
     <div className="header">
       <div className="flex gap-4">
@@ -71,7 +74,7 @@ function Header() {
           hover:m-[-1px] 
           rounded p-3"
         >
-          Cart
+          Cart <span className="cartText">{cartLength}</span>
         </Link>
       </div>
     </div>
