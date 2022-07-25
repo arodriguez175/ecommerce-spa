@@ -8,7 +8,7 @@ function Header() {
   return (
     <div className="header">
       <div className="flex gap-4">
-        <Link to="/" className="text-red-500 p-3">
+        <Link to="/" className="logo p-3">
           Mercury
         </Link>
 
@@ -74,7 +74,7 @@ function Header() {
           hover:m-[-1px] 
           rounded p-3"
         >
-          Cart <span className="cartText">{cartLength}</span>
+          Cart <span className="cartNumber absolute">{cartLength}</span>
         </Link>
       </div>
     </div>

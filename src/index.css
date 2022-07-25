@@ -10,8 +10,12 @@
   --th-text: black;
 }
 
-.cartText {
+.cartNumber {
   background-color: red;
   color: white;
   border-radius: 50%;
+}
+
+.logo {
+  color: red;
 }

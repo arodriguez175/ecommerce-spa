@@ -5,7 +5,7 @@ import "./ShoePage.css";
 import { addToCart } from "../features/cart/cartSlice";
 
 function ShoePage() {
-  const initialCartButtonText = "Add to Cart";
+  const initialCartButtonText = "Add to Bag";
   const [cartButtonText, setCartButtonText] = useState(initialCartButtonText);
   const dispatch = useDispatch();
   const [selectedSize, setSelectedSize] = useState("");
@@ -24,7 +24,7 @@ function ShoePage() {
     };
     dispatch(addToCart(selectedShoe));
 
-    setCartButtonText("Added to Cart");
+    setCartButtonText("Added to Bag");
     setTimeout(() => {
       setCartButtonText(initialCartButtonText);
     }, 1000);
