@@ -7,7 +7,7 @@ function Cart() {
   });
 
   return (
-    <div className="cart flex">
+    <div className="cart">
       <h2 className="m-5">
         <span className="text-2xl">Bag</span>
         <span>{` (${bag.length} items)`}</span>

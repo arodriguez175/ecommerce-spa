@@ -8,15 +8,22 @@ function CartShoe(props) {
   });
 
   return (
-    <div>
-      <img src={shoeInCart.imageURL} className="w-[300px]" />
-      <p>{shoeInCart.name}</p>
-      <p>{shoeInCart.gender}</p>
-      <p>{shoeInCart.color}</p>
-      <p>{props.size}</p>
-      <p>Qty {/* Qty */}</p>
-      <p>${shoeInCart.price}</p>
-      <button>Remove</button>
+    <div className="flex mb-8">
+      <img src={shoeInCart.imageURL} className="w-[200px]" />
+
+      <div className="ml-8 w-[500px]">
+        <p className="font-bold">{shoeInCart.name}</p>
+        <p>{shoeInCart.gender}</p>
+        <p>{shoeInCart.color}</p>
+        <p>{props.size}</p>
+        <p>Qty {/* Qty */}</p>
+
+        <button className="">Remove</button>
+      </div>
+
+      <div>
+        <p>${shoeInCart.price}</p>
+      </div>
     </div>
   );
 }
