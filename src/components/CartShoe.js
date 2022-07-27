@@ -17,8 +17,7 @@ function CartShoe(props) {
         <p>{shoeInCart.color}</p>
         <p>{props.size}</p>
         <p>Qty {/* Qty */}</p>
-
-        <button className="">Remove</button>
+        <button>Remove</button>
       </div>
 
       <div>
