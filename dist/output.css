@@ -569,42 +569,6 @@ video {
   bottom: 0px;
 }
 
-.right-0 {
-  right: 0px;
-}
-
-.right-10 {
-  right: 2.5rem;
-}
-
-.left-10 {
-  left: 2.5rem;
-}
-
-.bottom-10 {
-  bottom: 2.5rem;
-}
-
-.col-auto {
-  grid-column: auto;
-}
-
-.col-span-5 {
-  grid-column: span 5 / span 5;
-}
-
-.col-span-8 {
-  grid-column: span 8 / span 8;
-}
-
-.col-span-2 {
-  grid-column: span 2 / span 2;
-}
-
-.col-span-4 {
-  grid-column: span 4 / span 4;
-}
-
 .col-span-3 {
   grid-column: span 3 / span 3;
 }
@@ -613,36 +577,8 @@ video {
   grid-column: span 1 / span 1;
 }
 
-.col-end-4 {
-  grid-column-end: 4;
-}
-
-.col-end-5 {
-  grid-column-end: 5;
-}
-
-.col-end-1 {
-  grid-column-end: 1;
-}
-
-.float-right {
-  float: right;
-}
-
-.float-left {
-  float: left;
-}
-
 .m-5 {
   margin: 1.25rem;
-}
-
-.m-1 {
-  margin: 0.25rem;
-}
-
-.m-auto {
-  margin: auto;
 }
 
 .m-10 {
@@ -652,6 +588,18 @@ video {
 .mx-20 {
   margin-left: 5rem;
   margin-right: 5rem;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.ml-8 {
+  margin-left: 2rem;
 }
 
 .ml-1 {
@@ -670,72 +618,8 @@ video {
   margin-top: 1.25rem;
 }
 
-.mb-3 {
-  margin-bottom: 0.75rem;
-}
-
-.ml-4 {
-  margin-left: 1rem;
-}
-
-.mb-10 {
-  margin-bottom: 2.5rem;
-}
-
-.ml-8 {
-  margin-left: 2rem;
-}
-
-.mb-8 {
-  margin-bottom: 2rem;
-}
-
-.mt-8 {
-  margin-top: 2rem;
-}
-
-.mt-12 {
-  margin-top: 3rem;
-}
-
-.mt-14 {
-  margin-top: 3.5rem;
-}
-
-.mt-16 {
-  margin-top: 4rem;
-}
-
-.ml-3 {
-  margin-left: 0.75rem;
-}
-
-.ml-10 {
-  margin-left: 2.5rem;
-}
-
-.ml-\[40px\] {
-  margin-left: 40px;
-}
-
-.ml-\[100px\] {
-  margin-left: 100px;
-}
-
-.mb-6 {
-  margin-bottom: 1.5rem;
-}
-
 .block {
   display: block;
-}
-
-.inline-block {
-  display: inline-block;
-}
-
-.inline {
-  display: inline;
 }
 
 .flex {
@@ -782,22 +666,6 @@ video {
   width: 300px;
 }
 
-.w-\[100px\] {
-  width: 100px;
-}
-
-.w-full {
-  width: 100%;
-}
-
-.w-\[30\%\] {
-  width: 30%;
-}
-
-.flex-1 {
-  flex: 1 1 0%;
-}
-
 .border-collapse {
   border-collapse: collapse;
 }
@@ -811,6 +679,10 @@ video {
   resize: both;
 }
 
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -819,36 +691,12 @@ video {
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.grid-cols-1 {
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
-.flex-row {
-  flex-direction: row;
-}
-
-.flex-col {
-  flex-direction: column;
-}
-
-.flex-wrap {
-  flex-wrap: wrap;
-}
-
-.justify-end {
-  justify-content: flex-end;
-}
-
 .justify-center {
   justify-content: center;
+}
+
+.gap-3 {
+  gap: 0.75rem;
 }
 
 .gap-4 {
@@ -863,10 +711,6 @@ video {
   gap: 0.25rem;
 }
 
-.gap-3 {
-  gap: 0.75rem;
-}
-
 .rounded {
   border-radius: 0.25rem;
 }
@@ -877,11 +721,6 @@ video {
 
 .border {
   border-width: 1px;
-}
-
-.border-\[\#e6e6e6\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(230 230 230 / var(--tw-border-opacity));
 }
 
 .bg-shoe-option {
@@ -895,11 +734,6 @@ video {
 .bg-\[\#363636\] {
   --tw-bg-opacity: 1;
   background-color: rgb(54 54 54 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#e7e7e7\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(231 231 231 / var(--tw-bg-opacity));
 }
 
 .p-3 {
@@ -928,17 +762,13 @@ video {
   text-align: center;
 }
 
-.text-right {
-  text-align: right;
-}
-
-.align-middle {
-  vertical-align: middle;
-}
-
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-\[30px\] {
+  font-size: 30px;
 }
 
 .text-\[16pt\] {
@@ -951,20 +781,6 @@ video {
 
 .text-\[20pt\] {
   font-size: 20pt;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.text-\[30px\] {
-  font-size: 30px;
 }
 
 .font-bold {
@@ -1040,6 +856,14 @@ video {
 
 .logo {
   color: red;
+}
+
+.border {
+  border-color: #e7e7e7;
+}
+
+:hover {
+  border-color: #e7e7e7;
 }
 
 .hover\:m-\[-1px\]:hover {
