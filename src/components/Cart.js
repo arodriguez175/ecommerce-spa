@@ -13,21 +13,22 @@ function Cart() {
         <span>{` (${bag.length} items)`}</span>
       </h2>
 
-      <div className="grid grid-cols-4 gap-3">
-        {bag.length ? (
+      {bag.length ? (
+        <div className="grid grid-cols-4 gap-3">
           <div className="col-span-3">
             {bag.map((shoe, index) => {
               return <CartShoe id={shoe.id} size={shoe.size} key={index} />;
             })}
           </div>
-        ) : (
-          <p>Sorry, cart is empty.</p>
-        )}
-        <div className="col-span-1">
-          <h2 className="text-2xl mb-3">Order Summary</h2>
-          {/* numbers */}
+
+          <div className="col-span-1">
+            <h2 className="text-2xl mb-3">Order Summary</h2>
+            {/* numbers */}
+          </div>
         </div>
-      </div>
+      ) : (
+        <p className="text-center">Sorry, cart is empty.</p>
+      )}
     </div>
   );
 }
