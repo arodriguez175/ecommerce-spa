@@ -8,26 +8,28 @@ function Cart() {
 
   return (
     <div className="cart">
-      <h2 className="m-5">
-        <span className="text-2xl">Bag</span>
-        <span>{` (${bag.length} items)`}</span>
-      </h2>
-
       {bag.length ? (
-        <div className="grid grid-cols-4 gap-3">
-          <div className="col-span-3">
-            {bag.map((shoe, index) => {
-              return <CartShoe id={shoe.id} size={shoe.size} key={index} />;
-            })}
-          </div>
+        <div>
+          <h2 className="m-5">
+            <span className="text-2xl">Bag</span>
+            <span>{` (${bag.length} items)`}</span>
+          </h2>
 
-          <div className="col-span-1">
-            <h2 className="text-2xl mb-3">Order Summary</h2>
-            {/* numbers */}
+          <div className="grid grid-cols-4 gap-3">
+            <div className="col-span-3">
+              {bag.map((shoe, index) => {
+                return <CartShoe id={shoe.id} size={shoe.size} key={index} />;
+              })}
+            </div>
+
+            <div className="col-span-1">
+              <h2 className="text-2xl mb-3">Order Summary</h2>
+              {/* numbers */}
+            </div>
           </div>
         </div>
       ) : (
-        <p className="text-center">Sorry, cart is empty.</p>
+        <p className="text-center m-10 text-[30px]">Sorry, bag is empty.</p>
       )}
     </div>
   );
