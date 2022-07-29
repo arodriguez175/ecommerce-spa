@@ -13,11 +13,13 @@ function CartShoe(props) {
 
       <div className="ml-8 w-[500px]">
         <p className="font-bold">{shoeInCart.name}</p>
-        <p>{shoeInCart.gender}</p>
-        <p>{shoeInCart.color}</p>
-        <p>{props.size}</p>
-        <p>Qty {/* Qty */}</p>
-        <button>Remove</button>
+        <div className="text-[#b5b5b5]">
+          <p>{shoeInCart.gender}</p>
+          <p>Color: {shoeInCart.color}</p>
+          <p>Size: {props.size}</p>
+          <p>Qty {/* Qty */}</p>
+          <button>Remove</button>
+        </div>
       </div>
 
       <div>

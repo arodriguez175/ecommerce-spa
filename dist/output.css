@@ -787,6 +787,11 @@ video {
   font-weight: 700;
 }
 
+.text-\[\#b5b5b5\] {
+  --tw-text-opacity: 1;
+  color: rgb(181 181 181 / var(--tw-text-opacity));
+}
+
 .text-shoe-text-hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -851,7 +856,7 @@ video {
   min-width: 1rem;
   width: auto;
   text-align: center;
-  font-size: 0.625rem;
+  font-size: 0.7rem;
 }
 
 .logo {
@@ -864,6 +869,10 @@ video {
 
 :hover {
   border-color: #e7e7e7;
+}
+
+.free {
+  color: green;
 }
 
 .hover\:m-\[-1px\]:hover {

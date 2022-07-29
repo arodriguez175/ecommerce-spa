@@ -24,7 +24,12 @@ function Cart() {
 
             <div className="col-span-1">
               <h2 className="text-2xl mb-3">Order Summary</h2>
-              {/* numbers */}
+              <p>Subtotal {}</p>
+              <p>Estimated Tax ${0}.00</p>
+              <span>Estimated Shipping</span>
+              <span className="free"> Free</span>
+              <p>Estimated Total {}</p>
+              <button>Checkout</button>
             </div>
           </div>
         </div>
