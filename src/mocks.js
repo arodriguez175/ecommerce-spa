@@ -8,7 +8,7 @@ export const mensShoes = [
     color: "White/Black/Gym Red",
     sku: "553560-163",
     sizes: [7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 14, 15],
-    gender: ["men"],
+    gender: ["Men's Shoes"],
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ export const mensShoes = [
     color: "White/White",
     sku: "CW2288-111",
     sizes: [7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 14, 15],
-    gender: ["men"],
+    gender: ["Men's Shoes"],
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ export const mensShoes = [
     color: "Black/Dark Smoke Grey/White",
     sku: "DH4071-001",
     sizes: [7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 14, 15],
-    gender: ["men"],
+    gender: ["Men's Shoes"],
   },
   {
     id: 4,
@@ -44,7 +44,7 @@ export const mensShoes = [
       5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13,
       14, 15,
     ],
-    gender: ["men", "women"],
+    gender: ["Unisex Shoes"],
   },
   {
     id: 5,
@@ -55,7 +55,7 @@ export const mensShoes = [
     color: "White/Black/Wolf Grey",
     sku: "921826-101",
     sizes: [7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 14, 15],
-    gender: ["men"],
+    gender: ["Men's Shoes"],
   },
   {
     id: 6,
@@ -66,7 +66,7 @@ export const mensShoes = [
     color: "White/Black/Reflect Silver/Hyper Jade",
     sku: "604133-148",
     sizes: [7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 14, 15],
-    gender: ["men"],
+    gender: ["Men's Shoes"],
   },
 ];
 
@@ -80,7 +80,7 @@ export const womensShoes = [
     color: "Pink Oxford/Light Soft Pink/Champagne/Summit White",
     sku: "DH4072-601",
     sizes: [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12],
-    gender: ["women"],
+    gender: ["Women's Shoes"],
   },
   {
     id: 8,
@@ -91,18 +91,21 @@ export const womensShoes = [
     color: "White/Pure Platinum/Particle Grey/Metallic Silver",
     sku: "DD8686-100",
     sizes: [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12],
-    gender: ["women"],
+    gender: ["Women's Shoes"],
   },
   {
     id: 9,
     imageURL:
-      "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/23a75557-3d43-4cfd-994b-f7d9c966e54d/blazer-low-platform-womens-shoes-X8Nl4M.png",
-    name: "Nike Blazer Low Platform",
-    price: 95,
-    color: "White/Summit White/Team Orange/Game Royal",
-    sku: "DJ0292-107",
-    sizes: [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12],
-    gender: ["women"],
+      "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/9bd58ab4-a823-407f-8f1b-9ea8a4c6c03a/air-max-270-mens-shoes-KkLcGR.png",
+    name: "Nike Air Max 270",
+    price: 136,
+    color: "University Red/Coconut Milk/Black/University Gold",
+    sku: "DQ7625-600",
+    sizes: [
+      5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13,
+      14, 15,
+    ],
+    gender: ["Unisex Shoes"],
   },
   {
     id: 10,
@@ -113,7 +116,7 @@ export const womensShoes = [
     color: "Multi-Color/Sail/Habanero Red/White",
     sku: "DV2182-900",
     sizes: [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12],
-    gender: ["women"],
+    gender: ["Women's Shoes"],
   },
   {
     id: 11,
@@ -124,7 +127,7 @@ export const womensShoes = [
     color: "Crimson Bliss/Total Orange/Pearl White/Sail",
     sku: "CZ8280-600",
     sizes: [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12],
-    gender: ["women"],
+    gender: ["Women's Shoes"],
   },
   {
     id: 12,
@@ -135,6 +138,6 @@ export const womensShoes = [
     color: "Phantom/Football Grey/Volt/Black",
     sku: "DJ5454-001",
     sizes: [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12],
-    gender: ["women"],
+    gender: ["Women's Shoes"],
   },
 ];

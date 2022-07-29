@@ -43,6 +43,7 @@ function ShoePage() {
 
           <div>
             <p className="text-[28pt]">{shoe.name}</p>
+            <p className="text-[16pt]">{shoe.gender}</p>
             <p className="text-[16pt]">${shoe.price}</p>
 
             <div className="grid grid-cols-5 gap-1 mt-5">
