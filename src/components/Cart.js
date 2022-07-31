@@ -6,6 +6,11 @@ function Cart() {
     return state.cart.cart;
   });
 
+  const numberFormatter = new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+  });
+
   return (
     <div className="cart">
       {bag.length ? (
@@ -15,21 +20,36 @@ function Cart() {
             <span>{` (${bag.length} items)`}</span>
           </h2>
 
-          <div className="grid grid-cols-4 gap-3">
-            <div className="col-span-3">
+          <div className="grid grid-cols-3 gap-3">
+            <div className="col-span-2">
               {bag.map((shoe, index) => {
                 return <CartShoe id={shoe.id} size={shoe.size} key={index} />;
               })}
             </div>
 
-            <div className="col-span-1">
+            <div className="col-span-1 mx-auto leading-loose">
               <h2 className="text-2xl mb-3">Order Summary</h2>
-              <p>Subtotal {}</p>
-              <p>Estimated Tax ${0}.00</p>
-              <span>Estimated Shipping</span>
-              <span className="free"> Free</span>
-              <p>Estimated Total {}</p>
-              <button>Checkout</button>
+              <p>Subtotal {numberFormatter.format(0)}</p>
+              <p>Estimated Tax {numberFormatter.format(0)}</p>
+              <p>
+                Estimated Shipping<span className="free"> Free</span>
+              </p>
+
+              <p className="font-semibold">
+                Estimated Total {numberFormatter.format(0)}
+              </p>
+
+              <button
+                className="bg-shoe-primary 
+                hover:bg-shoe-hover
+                text-shoe-primary-text
+                w-[300px]
+                p-[10px]
+                rounded
+                mt-3"
+              >
+                Checkout
+              </button>
             </div>
           </div>
         </div>
