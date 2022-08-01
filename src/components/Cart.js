@@ -29,15 +29,21 @@ function Cart() {
 
             <div className="col-span-1 mx-auto leading-loose">
               <h2 className="text-2xl mb-3">Order Summary</h2>
-              <p>Subtotal {numberFormatter.format(0)}</p>
-              <p>Estimated Tax {numberFormatter.format(0)}</p>
-              <p>
-                Estimated Shipping<span className="free"> Free</span>
-              </p>
+              <div className="orderSummary">
+                <p>
+                  Subtotal <span>{numberFormatter.format(0)}</span>
+                </p>
+                <p>
+                  Estimated Tax <span>{numberFormatter.format(0)}</span>
+                </p>
+                <p>
+                  Estimated Shipping<span className="free">Free</span>
+                </p>
 
-              <p className="font-semibold">
-                Estimated Total {numberFormatter.format(0)}
-              </p>
+                <p className="font-semibold">
+                  Estimated Total <span>{numberFormatter.format(0)}</span>
+                </p>
+              </div>
 
               <button
                 className="bg-shoe-primary 

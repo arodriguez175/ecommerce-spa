@@ -35,3 +35,7 @@
 .free {
   color: green;
 }
+
+.orderSummary span {
+  float: right;
+}
