@@ -11,14 +11,6 @@ function Cart() {
     currency: "USD",
   });
 
-  const shoeIds = bag.map((item) => item.id);
-
-  // const shoesInCart = useSelector((state) => {
-  //   return state.shoeCatalog.shoes.filter((item) => {
-  //     return shoeIds.includes(item.id);
-  //   });
-  // });
-
   const shoeCatalog = useSelector((state) => state.shoeCatalog.shoes);
 
   let total = 0;
@@ -39,7 +31,14 @@ function Cart() {
           <div className="grid grid-cols-3 gap-3">
             <div className="col-span-2">
               {bag.map((shoe, index) => {
-                return <CartShoe id={shoe.id} size={shoe.size} key={index} />;
+                return (
+                  <CartShoe
+                    id={shoe.id}
+                    size={shoe.size}
+                    key={index}
+                    qty={shoe.quantity}
+                  />
+                );
               })}
             </div>
 
