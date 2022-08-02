@@ -11,6 +11,22 @@ function Cart() {
     currency: "USD",
   });
 
+  const shoeIds = bag.map((item) => item.id);
+
+  // const shoesInCart = useSelector((state) => {
+  //   return state.shoeCatalog.shoes.filter((item) => {
+  //     return shoeIds.includes(item.id);
+  //   });
+  // });
+
+  const shoeCatalog = useSelector((state) => state.shoeCatalog.shoes);
+
+  let total = 0;
+  for (let shoeItem of bag) {
+    const shoeFromCatalog = shoeCatalog.find((item) => item.id === shoeItem.id);
+    total += shoeFromCatalog.price * shoeItem.quantity;
+  }
+
   return (
     <div className="cart">
       {bag.length ? (
@@ -31,7 +47,7 @@ function Cart() {
               <h2 className="text-2xl mb-3">Order Summary</h2>
               <div className="orderSummary">
                 <p>
-                  Subtotal <span>{numberFormatter.format(0)}</span>
+                  Subtotal <span>{numberFormatter.format(total)}</span>
                 </p>
                 <p>
                   Estimated Tax <span>{numberFormatter.format(0)}</span>
@@ -41,7 +57,7 @@ function Cart() {
                 </p>
 
                 <p className="font-semibold">
-                  Estimated Total <span>{numberFormatter.format(0)}</span>
+                  Estimated Total <span>{numberFormatter.format(total)}</span>
                 </p>
               </div>
 

@@ -7,6 +7,10 @@ function CartShoe(props) {
     });
   });
 
+  const existingShoeInCart = useSelector((state) => {
+    return state.cart.cart.find((item) => item.quantity);
+  });
+
   return (
     <div className="flex mb-8 p-4 border shadow-md rounded-lg">
       <img src={shoeInCart.imageURL} className="w-[200px]" />
@@ -17,7 +21,7 @@ function CartShoe(props) {
           <p>{shoeInCart.gender}</p>
           <p>Color: {shoeInCart.color}</p>
           <p>Size: {props.size}</p>
-          <p>Qty {/* Qty */}</p>
+          <p>Qty {existingShoeInCart.quantity}</p>
           <button>Remove</button>
         </div>
       </div>
