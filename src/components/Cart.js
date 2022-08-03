@@ -25,7 +25,9 @@ function Cart() {
         <div>
           <h2 className="m-5">
             <span className="text-2xl">Bag</span>
-            <span>{` (${bag.length} items)`}</span>
+            <span>{` (${bag
+              .map((item) => item.quantity)
+              .reduce((first, last) => first + last, 0)} items)`}</span>
           </h2>
 
           <div className="grid grid-cols-3 gap-3">

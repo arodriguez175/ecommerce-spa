@@ -3,7 +3,11 @@ import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 function Header() {
-  const cartLength = useSelector((state) => state.cart.cart.length);
+  const cartLength = useSelector((state) => state.cart.cart)
+    .map((item) => {
+      return item.quantity;
+    })
+    .reduce((first, last) => first + last, 0);
 
   return (
     <div className="header">
