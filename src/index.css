@@ -40,10 +40,6 @@
   float: right;
 }
 
-.footerBottom {
-  font-size: 10px;
-}
-
 .footerBottomRight {
   display: flex;
   float: right;

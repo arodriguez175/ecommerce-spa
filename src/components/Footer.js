@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <div className="footer">
-      <div className="bottom-0 grid grid-cols-4 mb-8">
+      <div className="bottom-0 grid grid-cols-4 mb-8 text-sm">
         <div>
           <p>GIFT CARDS</p>
           <p>PROMOTIONS</p>
@@ -32,7 +32,7 @@ function Footer() {
         <div>{/* social media icons */}</div>
       </div>
 
-      <div className="footerBottom">
+      <div className="text-[10px]">
         <p className="float-left">
           &copy; {new Date().getFullYear()} Mercury, Inc. All Rights Reserved
         </p>
