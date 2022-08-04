@@ -577,6 +577,10 @@ video {
   grid-column: span 1 / span 1;
 }
 
+.float-left {
+  float: left;
+}
+
 .m-5 {
   margin: 1.25rem;
 }
@@ -682,6 +686,10 @@ video {
 
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .grid-cols-5 {
@@ -900,6 +908,19 @@ video {
 
 .orderSummary span {
   float: right;
+}
+
+.footerBottom {
+  font-size: 10px;
+}
+
+.footerBottomRight {
+  display: flex;
+  float: right;
+}
+
+.footerBottomRight p {
+  margin-left: 30px;
 }
 
 .hover\:m-\[-1px\]:hover {
