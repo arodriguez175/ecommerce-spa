@@ -1,3 +1,11 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faTwitter,
+  faFacebook,
+  faYoutube,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
+
 function Footer() {
   return (
     <div className="footer">
@@ -29,7 +37,12 @@ function Footer() {
           <p>Sustainability</p>
         </div>
 
-        <div>{/* social media icons */}</div>
+        <div>
+          <FontAwesomeIcon icon={faTwitter} />
+          <FontAwesomeIcon icon={faYoutube} />
+          <FontAwesomeIcon icon={faFacebook} />
+          <FontAwesomeIcon icon={faInstagram} />
+        </div>
       </div>
 
       <div className="text-[10px]">

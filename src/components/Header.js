@@ -1,6 +1,8 @@
 import Search from "./Search";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBagShopping } from "@fortawesome/free-solid-svg-icons";
 
 function Header() {
   const cartLength = useSelector((state) => state.cart.cart)
@@ -78,7 +80,7 @@ function Header() {
           hover:m-[-1px] 
           rounded p-3"
         >
-          Bag
+          <FontAwesomeIcon icon={faBagShopping} />
           <span className="cartNumber absolute">
             {cartLength > 0 ? cartLength : ""}
           </span>
