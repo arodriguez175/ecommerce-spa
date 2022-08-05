@@ -9,6 +9,8 @@ module.exports = {
       "shoe-text-hover": "white",
       "shoe-text": "var(--th-text)",
       "shoe-option": "var(--th-secondary)",
+      red: "#ff0000",
+      white: "#fff",
     },
     extend: {},
   },

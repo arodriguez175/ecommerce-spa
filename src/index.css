@@ -10,16 +10,6 @@
   --th-text: black;
 }
 
-.cartNumber {
-  background-color: red;
-  color: white;
-  border-radius: 50%;
-  min-width: 1rem;
-  width: auto;
-  text-align: center;
-  font-size: 0.7rem;
-}
-
 .logo {
   color: red;
 }
@@ -38,13 +28,4 @@
 
 .orderSummary span {
   float: right;
-}
-
-.footerBottomRight {
-  display: flex;
-  float: right;
-}
-
-.footerBottomRight p {
-  margin-left: 30px;
 }

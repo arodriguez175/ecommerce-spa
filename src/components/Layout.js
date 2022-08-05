@@ -4,9 +4,12 @@ import Header from "./Header";
 
 function Layout() {
   return (
-    <div className="pt-6 px-6">
-      <Header />
-      <Outlet />
+    <div>
+      <div className="pt-6 px-6">
+        <Header />
+        <Outlet />
+      </div>
+
       <Footer />
     </div>
   );

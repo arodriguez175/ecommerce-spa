@@ -3,7 +3,7 @@ function Search() {
     <div className="search">
       <span>
         <input
-          className="border 1px solid #d9d9d9 
+          className="border 
           shadow 1px 2px 3px #bfbfbf
           gainsboro-100 
           rounded 

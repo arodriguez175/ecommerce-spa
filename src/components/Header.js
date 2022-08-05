@@ -81,7 +81,7 @@ function Header() {
           rounded p-3"
         >
           <FontAwesomeIcon icon={faBagShopping} />
-          <span className="cartNumber absolute">
+          <span className="bg-red text-white rounded-full min-w-[1rem] w-auto text-center text-[0.7rem] absolute">
             {cartLength > 0 ? cartLength : ""}
           </span>
         </Link>

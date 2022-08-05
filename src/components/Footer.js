@@ -8,7 +8,7 @@ import {
 
 function Footer() {
   return (
-    <div className="footer">
+    <div className="footer bg-[#363636] text-[#fff] pt-10 px-10 pb-4 mt-[100px]">
       <div className="bottom-0 grid grid-cols-4 mb-8 text-sm">
         <div>
           <p>GIFT CARDS</p>
@@ -37,7 +37,7 @@ function Footer() {
           <p>Sustainability</p>
         </div>
 
-        <div>
+        <div className="[&>*]:ml-4 text-[25px]">
           <FontAwesomeIcon icon={faTwitter} />
           <FontAwesomeIcon icon={faYoutube} />
           <FontAwesomeIcon icon={faFacebook} />
@@ -50,13 +50,14 @@ function Footer() {
           &copy; {new Date().getFullYear()} Mercury, Inc. All Rights Reserved
         </p>
 
-        <div className="footerBottomRight">
+        <div className="flex float-right [&>*]:ml-6">
           <p>Guides</p>
           <p>Terms of Sale</p>
           <p>Terms of Use</p>
           <p>Mercury Privacy Policy</p>
         </div>
       </div>
+      <div className="clear-both"></div>
     </div>
   );
 }
