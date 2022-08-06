@@ -41,14 +41,14 @@ function Header() {
 
         <Link
           to="/men"
-          className="hover:bg-shoe-primary hover:text-shoe-text-hover border border-lightgrayBorder rounded p-3"
+          className="hover:bg-primary hover:text-secondary border border-lightgrayBorder rounded p-3"
         >
           Men
         </Link>
 
         <Link
           to="/women"
-          className="hover:bg-shoe-primary hover:text-shoe-text-hover border border-lightgrayBorder rounded p-3"
+          className="hover:bg-primary hover:text-secondary border border-lightgrayBorder rounded p-3"
         >
           Women
         </Link>
@@ -67,7 +67,7 @@ function Header() {
           className="hover:border border-lightgrayBorder hover:m-[-1px] rounded p-3"
         >
           <FontAwesomeIcon icon={faBagShopping} />
-          <span className="bg-red text-white rounded-full min-w-[1rem] w-auto text-center text-[0.7rem] absolute">
+          <span className="bg-red text-secondary rounded-full min-w-[1rem] w-auto text-center text-[0.7rem] absolute">
             {cartLength > 0 ? cartLength : ""}
           </span>
         </Link>

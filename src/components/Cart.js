@@ -62,7 +62,7 @@ function Cart() {
                 </p>
               </div>
 
-              <button className="bg-shoe-primary hover:bg-shoe-hover text-shoe-primary-text w-[300px] p-[10px] rounded mt-3">
+              <button className="bg-primary hover:bg-darkgray text-secondary w-[300px] p-[10px] rounded mt-3">
                 Checkout
               </button>
             </div>

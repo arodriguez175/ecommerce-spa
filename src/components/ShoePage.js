@@ -46,12 +46,12 @@ function ShoePage() {
             <p className="text-[16pt]">{shoe.gender}</p>
             <p className="text-[16pt]">${shoe.price}</p>
 
-            <div className="grid grid-cols-5 gap-1 mt-5">
+            <div className="grid grid-cols-5 gap-1 mt-5 cursor-pointer">
               {shoe.sizes.map((size) => {
                 return (
                   <label
                     key={size}
-                    className={`border border-lightgrayBorder text-center rounded p-2 px-5 hover:bg-shoe-hover hover:text-shoe-text-hover hover:cursor-pointer text-shoe-text bg-shoe-option
+                    className={`border border-lightgrayBorder text-center rounded p-2 px-5 hover:bg-primary hover:text-secondary hover:cursor-pointer
                     ${size === selectedSize ? "selected" : ""}`}
                   >
                     {size}
@@ -72,7 +72,7 @@ function ShoePage() {
             <div className="border border-lightgrayBorder mt-5 justify-center rounded grid w-[400px]">
               <button
                 onClick={handleAddToCart}
-                className={`bg-shoe-primary text-shoe-primary-text hover:text-shoe-text-hover hover:bg-shoe-hover w-[300px] p-2 mt-3 mb-3 rounded
+                className={`bg-primary text-secondary hover:text-secondary hover:bg-darkgray w-[300px] p-2 mt-3 mb-3 rounded
                 ${!selectedSize && "disabled"}
                 `}
                 disabled={!selectedSize}

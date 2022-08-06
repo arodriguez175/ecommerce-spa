@@ -708,6 +708,10 @@ video {
           transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .resize {
   resize: both;
 }
@@ -765,21 +769,15 @@ video {
 }
 
 .border-lightgrayBorder {
-  --tw-border-opacity: 1;
-  border-color: rgb(231 231 231 / var(--tw-border-opacity));
+  border-color: var(--th-lightgrayBorder);
 }
 
-.bg-shoe-primary {
+.bg-primary {
   background-color: var(--th-primary);
 }
 
 .bg-red {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 0 0 / var(--tw-bg-opacity));
-}
-
-.bg-shoe-option {
-  background-color: var(--th-secondary);
+  background-color: var(--th-red);
 }
 
 .p-\[10px\] {
@@ -880,36 +878,19 @@ video {
 }
 
 .text-green {
-  --tw-text-opacity: 1;
-  color: rgb(0 128 0 / var(--tw-text-opacity));
+  color: var(--th-green);
 }
 
-.text-shoe-primary-text {
-  color: var(--th-primary-text);
+.text-secondary {
+  color: var(--th-secondary);
 }
 
 .text-lightgrayText {
-  --tw-text-opacity: 1;
-  color: rgb(181 181 181 / var(--tw-text-opacity));
+  color: var(--th-lightgrayText);
 }
 
 .text-red {
-  --tw-text-opacity: 1;
-  color: rgb(255 0 0 / var(--tw-text-opacity));
-}
-
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-shoe-text-hover {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-shoe-text {
-  color: var(--th-text);
+  color: var(--th-red);
 }
 
 .underline {
@@ -956,10 +937,12 @@ video {
 
 :root {
   --th-primary: #363636;
-  --th-primary-text: white;
   --th-secondary: white;
-  --th-hover: #4d4d4d;
-  --th-text: black;
+  --th-darkgray: #4d4d4d;
+  --th-red: #ff0000;
+  --th-green: #008000;
+  --th-lightgrayText: #b5b5b5;
+  --th-lightgrayBorder: #e7e7e7;
 }
 
 .hover\:m-\[-1px\]:hover {
@@ -974,17 +957,16 @@ video {
   border-width: 1px;
 }
 
-.hover\:bg-shoe-hover:hover {
-  background-color: var(--th-hover);
+.hover\:bg-darkgray:hover {
+  background-color: var(--th-darkgray);
 }
 
-.hover\:bg-shoe-primary:hover {
+.hover\:bg-primary:hover {
   background-color: var(--th-primary);
 }
 
-.hover\:text-shoe-text-hover:hover {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+.hover\:text-secondary:hover {
+  color: var(--th-secondary);
 }
 
 .\[\&\>\*\>\*\]\:float-right>*>* {
