@@ -5,56 +5,104 @@ import {
   faYoutube,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
     <div className="footer bg-primary text-secondary pt-10 px-10 pb-4 mt-[100px]">
-      <div className="bottom-0 grid grid-cols-4 mb-8 text-sm">
-        <div>
-          <p>GIFT CARDS</p>
-          <p>PROMOTIONS</p>
-          <p>FIND A STORE</p>
-          <p>SIGN UP FOR EMAIL</p>
-          <p>BECOME A MEMBER</p>
-          <p>SEND US FEEDBACK</p>
-        </div>
+      <div className="bottom-0 grid grid-cols-4 mb-8 text-sm [&>*>*]:mb-3">
+        <ul>
+          <li>
+            <Link to="#">GIFT CARDS</Link>
+          </li>
+          <li>
+            <Link to="#">PROMOTIONS</Link>
+          </li>
+          <li>
+            <Link to="#">FIND A STORE</Link>
+          </li>
+          <li>
+            <Link to="#">SIGN UP FOR EMAIL</Link>
+          </li>
+          <li>
+            <Link to="#">BECOME A MEMBER</Link>
+          </li>
+          <li>
+            <Link to="#">MERCURY JOURNAL</Link>
+          </li>
+          <li>
+            <Link to="#">SEND US FEEDBACK</Link>
+          </li>
+        </ul>
 
-        <div>
-          <p>GET HELP</p>
-          <p>Order Status</p>
-          <p>Shipping and Delivery</p>
-          <p>Returns</p>
-          <p>Payment Options</p>
-          <p>Gift Card Balance</p>
-          <p>Contact Us</p>
-        </div>
+        <ul>
+          <li>
+            <Link to="#">GET HELP</Link>
+          </li>
+          <li>
+            <Link to="#">Order Status</Link>
+          </li>
+          <li>
+            <Link to="#">Shipping and Delivery</Link>
+          </li>
+          <li>
+            <Link to="#">Returns</Link>
+          </li>
+          <li>
+            <Link to="#">Payment Options</Link>
+          </li>
+          <li>
+            <Link to="#">Gift Card Balance</Link>
+          </li>
+          <li>
+            <Link to="#">Contact Us</Link>
+          </li>
+        </ul>
 
-        <div>
-          <p>ABOUT MERCURY</p>
-          <p>News</p>
-          <p>Careers</p>
-          <p>Purpose</p>
-          <p>Sustainability</p>
-        </div>
+        <ul>
+          <li>
+            <Link to="#">ABOUT MERCURY</Link>
+          </li>
+          <li>
+            <Link to="#">News</Link>
+          </li>
+          <li>
+            <Link to="#">Careers</Link>
+          </li>
+          <li>
+            <Link to="#">Purpose</Link>
+          </li>
+          <li>
+            <Link to="#">Sustainability</Link>
+          </li>
+        </ul>
 
-        <div className="[&>*]:ml-4 text-[25px]">
-          <FontAwesomeIcon icon={faTwitter} />
-          <FontAwesomeIcon icon={faYoutube} />
-          <FontAwesomeIcon icon={faFacebook} />
-          <FontAwesomeIcon icon={faInstagram} />
+        <div className="[&>*]:ml-4 text-[25px] absolute right-0 mr-[40px]">
+          <Link to="#">
+            <FontAwesomeIcon icon={faTwitter} />
+          </Link>
+          <Link to="#">
+            <FontAwesomeIcon icon={faYoutube} />
+          </Link>
+          <Link to="#">
+            <FontAwesomeIcon icon={faFacebook} />
+          </Link>
+          <Link to="#">
+            <FontAwesomeIcon icon={faInstagram} />
+          </Link>
         </div>
       </div>
 
       <div className="text-[10px]">
-        <p className="float-left">
+        <Link to="#" className="float-left">
           &copy; {new Date().getFullYear()} Mercury, Inc. All Rights Reserved
-        </p>
+        </Link>
 
         <div className="flex float-right [&>*]:ml-6">
-          <p>Guides</p>
-          <p>Terms of Sale</p>
-          <p>Terms of Use</p>
-          <p>Mercury Privacy Policy</p>
+          <Link to="#">Guides</Link>
+          <Link to="#">Terms of Sale</Link>
+          <Link to="#">Terms of Use</Link>
+          <Link to="#">Mercury Privacy Policy</Link>
         </div>
       </div>
       <div className="clear-both"></div>
