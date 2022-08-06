@@ -51,7 +51,7 @@ function ShoePage() {
                 return (
                   <label
                     key={size}
-                    className={`border border-lightgray2 border border-lightgray2-lightgray2 text-center rounded p-2 px-5 hover:bg-shoe-hover hover:text-shoe-text-hover hover:cursor-pointer text-shoe-text bg-shoe-option
+                    className={`border border-lightgray2 text-center rounded p-2 px-5 hover:bg-shoe-hover hover:text-shoe-text-hover hover:cursor-pointer text-shoe-text bg-shoe-option
                     ${size === selectedSize ? "selected" : ""}`}
                   >
                     {size}
