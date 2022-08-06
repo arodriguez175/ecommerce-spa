@@ -51,7 +51,7 @@ function ShoePage() {
                 return (
                   <label
                     key={size}
-                    className={`border text-center rounded p-2 px-5 hover:bg-shoe-hover hover:text-shoe-text-hover hover:cursor-pointer text-shoe-text bg-shoe-option
+                    className={`border border-lightgray2 border border-lightgray2-lightgray2 text-center rounded p-2 px-5 hover:bg-shoe-hover hover:text-shoe-text-hover hover:cursor-pointer text-shoe-text bg-shoe-option
                     ${size === selectedSize ? "selected" : ""}`}
                   >
                     {size}
@@ -69,7 +69,7 @@ function ShoePage() {
               })}
             </div>
 
-            <div className="border mt-5 justify-center rounded grid w-[400px]">
+            <div className="border border-lightgray2 mt-5 justify-center rounded grid w-[400px]">
               <button
                 onClick={handleAddToCart}
                 className={`bg-shoe-primary text-shoe-primary-text hover:text-shoe-text-hover hover:bg-shoe-hover w-[300px] p-2 mt-3 mb-3 rounded
@@ -79,7 +79,7 @@ function ShoePage() {
               >
                 {cartButtonText}
               </button>
-              <button className="border w-[300px] p-2 mb-3 rounded">
+              <button className="border border-lightgray2 w-[300px] p-2 mb-3 rounded">
                 Save to List
               </button>
             </div>

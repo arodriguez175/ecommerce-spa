@@ -3,7 +3,7 @@ function Search() {
     <div className="search">
       <span>
         <input
-          className="border shadow 1px 2px 3px gainsboro-100 rounded p-3 w-[600px]"
+          className="border border-lightgray2 shadow 1px 2px 3px gainsboro-100 rounded p-3 w-[600px]"
           placeholder="Search for..."
         />
         <button className="bg-shoe-primary text-shoe-text-hover ml-1 rounded p-3 hover:bg-shoe-hover">

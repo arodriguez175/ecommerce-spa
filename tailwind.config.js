@@ -13,6 +13,7 @@ module.exports = {
       white: "#fff",
       green: "#008000",
       lightgray: "#b5b5b5",
+      lightgray2: "#e7e7e7",
     },
     extend: {},
   },

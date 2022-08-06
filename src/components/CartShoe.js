@@ -8,7 +8,7 @@ function CartShoe(props) {
   });
 
   return (
-    <div className="flex mb-8 p-4 border shadow-md rounded-lg">
+    <div className="flex mb-8 p-4 border border-lightgray2 shadow-md rounded-lg">
       <img src={shoeInCart.imageURL} className="w-[200px]" />
 
       <div className="ml-8 w-[600px]">

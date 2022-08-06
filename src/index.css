@@ -9,11 +9,3 @@
   --th-hover: #4d4d4d;
   --th-text: black;
 }
-
-.border {
-  border-color: #e7e7e7;
-}
-
-:hover {
-  border-color: #e7e7e7;
-}
