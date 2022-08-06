@@ -8,12 +8,12 @@ function CartShoe(props) {
   });
 
   return (
-    <div className="flex mb-8 p-4 border border-lightgray2 shadow-md rounded-lg">
+    <div className="flex mb-8 p-4 border border-lightgrayBorder shadow-md rounded-lg">
       <img src={shoeInCart.imageURL} className="w-[200px]" />
 
       <div className="ml-8 w-[600px]">
         <p className="font-bold">{shoeInCart.name}</p>
-        <div className="text-lightgray">
+        <div className="text-lightgrayText">
           <p>{shoeInCart.gender}</p>
           <p>Color: {shoeInCart.color}</p>
           <p>Size: {props.size}</p>

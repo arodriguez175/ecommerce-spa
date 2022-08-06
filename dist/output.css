@@ -764,7 +764,7 @@ video {
   border-width: 1px;
 }
 
-.border-lightgray2 {
+.border-lightgrayBorder {
   --tw-border-opacity: 1;
   border-color: rgb(231 231 231 / var(--tw-border-opacity));
 }
@@ -888,7 +888,7 @@ video {
   color: var(--th-primary-text);
 }
 
-.text-lightgray {
+.text-lightgrayText {
   --tw-text-opacity: 1;
   color: rgb(181 181 181 / var(--tw-text-opacity));
 }
