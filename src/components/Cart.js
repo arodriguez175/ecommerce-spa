@@ -46,7 +46,7 @@ function Cart() {
 
             <div className="col-span-1 mx-auto leading-loose">
               <h2 className="text-2xl mb-3">Order Summary</h2>
-              <div className="orderSummary">
+              <div className="[&>*>*]:float-right">
                 <p>
                   Subtotal <span>{numberFormatter.format(total)}</span>
                 </p>
@@ -54,7 +54,7 @@ function Cart() {
                   Estimated Tax <span>{numberFormatter.format(0)}</span>
                 </p>
                 <p>
-                  Estimated Shipping<span className="free">Free</span>
+                  Estimated Shipping<span className="text-green">Free</span>
                 </p>
 
                 <p className="font-semibold">
@@ -62,15 +62,7 @@ function Cart() {
                 </p>
               </div>
 
-              <button
-                className="bg-shoe-primary 
-                hover:bg-shoe-hover
-                text-shoe-primary-text
-                w-[300px]
-                p-[10px]
-                rounded
-                mt-3"
-              >
+              <button className="bg-shoe-primary hover:bg-shoe-hover text-shoe-primary-text w-[300px] p-[10px] rounded mt-3">
                 Checkout
               </button>
             </div>

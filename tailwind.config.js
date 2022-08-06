@@ -11,6 +11,8 @@ module.exports = {
       "shoe-option": "var(--th-secondary)",
       red: "#ff0000",
       white: "#fff",
+      green: "#008000",
+      lightgray: "#b5b5b5",
     },
     extend: {},
   },

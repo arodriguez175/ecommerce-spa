@@ -8,7 +8,7 @@ import {
 
 function Footer() {
   return (
-    <div className="footer bg-[#363636] text-[#fff] pt-10 px-10 pb-4 mt-[100px]">
+    <div className="footer bg-shoe-primary text-shoe-primary-text pt-10 px-10 pb-4 mt-[100px]">
       <div className="bottom-0 grid grid-cols-4 mb-8 text-sm">
         <div>
           <p>GIFT CARDS</p>

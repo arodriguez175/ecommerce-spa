@@ -13,7 +13,7 @@ function CartShoe(props) {
 
       <div className="ml-8 w-[600px]">
         <p className="font-bold">{shoeInCart.name}</p>
-        <div className="text-[#b5b5b5]">
+        <div className="text-lightgray">
           <p>{shoeInCart.gender}</p>
           <p>Color: {shoeInCart.color}</p>
           <p>Size: {props.size}</p>

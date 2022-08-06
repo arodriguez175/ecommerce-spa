@@ -10,22 +10,10 @@
   --th-text: black;
 }
 
-.logo {
-  color: red;
-}
-
 .border {
   border-color: #e7e7e7;
 }
 
 :hover {
   border-color: #e7e7e7;
-}
-
-.free {
-  color: green;
-}
-
-.orderSummary span {
-  float: right;
 }
