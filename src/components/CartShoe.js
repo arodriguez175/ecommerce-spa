@@ -1,4 +1,5 @@
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { removeFromCart } from "../features/cart/cartSlice";
 
 function CartShoe(props) {
   const shoeInCart = useSelector((state) => {
@@ -6,6 +7,8 @@ function CartShoe(props) {
       return item.id === props.id;
     });
   });
+
+  const dispatch = useDispatch();
 
   return (
     <div className="flex mb-8 p-4 border border-lightgrayBorder shadow-md rounded-lg">
@@ -18,7 +21,9 @@ function CartShoe(props) {
           <p>Color: {shoeInCart.color}</p>
           <p>Size: {props.size}</p>
           <p>Qty: {props.qty}</p>
-          <button>Remove</button>
+          <button onClick={(index) => dispatch(removeFromCart(index))}>
+            Remove
+          </button>
         </div>
       </div>
 
