@@ -39,6 +39,7 @@ function Cart() {
                     size={shoe.size}
                     key={index}
                     qty={shoe.quantity}
+                    index={index}
                   />
                 );
               })}

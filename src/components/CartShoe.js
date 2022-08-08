@@ -9,6 +9,7 @@ function CartShoe(props) {
   });
 
   const dispatch = useDispatch();
+  const index = props.index;
 
   return (
     <div className="flex mb-8 p-4 border border-lightgrayBorder shadow-md rounded-lg">
@@ -21,7 +22,7 @@ function CartShoe(props) {
           <p>Color: {shoeInCart.color}</p>
           <p>Size: {props.size}</p>
           <p>Qty: {props.qty}</p>
-          <button onClick={(index) => dispatch(removeFromCart(index))}>
+          <button onClick={() => dispatch(removeFromCart(index))}>
             Remove
           </button>
         </div>

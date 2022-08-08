@@ -94,9 +94,9 @@ function Footer() {
       </div>
 
       <div className="text-[10px]">
-        <Link to="#" className="float-left">
+        <p className="float-left">
           &copy; {new Date().getFullYear()} Mercury, Inc. All Rights Reserved
-        </Link>
+        </p>
 
         <div className="flex float-right [&>*]:ml-6">
           <Link to="#">Guides</Link>
