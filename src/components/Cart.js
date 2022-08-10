@@ -20,7 +20,7 @@ function Cart() {
   }
 
   return (
-    <div className="cart">
+    <div className="cart mx-[5rem]">
       {bag.length ? (
         <div>
           <h2 className="m-5">
