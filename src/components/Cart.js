@@ -23,7 +23,7 @@ function Cart() {
     <div className="cart mx-[5rem]">
       {bag.length ? (
         <div>
-          <h2 className="m-5">
+          <h2 className="mt-5 mb-5 mr-5">
             <span className="text-2xl">Bag</span>
             <span>{` (${bag
               .map((item) => item.quantity)
