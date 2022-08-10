@@ -974,6 +974,10 @@ video {
   color: var(--th-red);
 }
 
+.text-primary {
+  color: var(--th-primary);
+}
+
 .underline {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;

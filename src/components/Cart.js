@@ -70,7 +70,9 @@ function Cart() {
           </div>
         </div>
       ) : (
-        <p className="text-center m-10 text-[30px]">Sorry, bag is empty.</p>
+        <p className="text-center m-10 text-[30px]">
+          There are no items in your bag.
+        </p>
       )}
     </div>
   );
