@@ -51,7 +51,7 @@ function ShoePage() {
                 return (
                   <label
                     key={size}
-                    className={`border border-lightgrayBorder text-center rounded p-2 px-5 hover:bg-primary hover:text-secondary hover:cursor-pointer
+                    className={`border border-lightgrayBorder text-center rounded p-2 px-5 hover:bg-primary hover:text-secondary hover:cursor-pointer focus-within:bg-primary focus-within:text-secondary
                     ${size === selectedSize ? "selected" : ""}`}
                   >
                     {size}
