@@ -46,7 +46,8 @@ function ShoePage() {
             <p className="text-[16pt]">{shoe.gender}</p>
             <p className="text-[16pt]">${shoe.price}</p>
 
-            <div className="grid grid-cols-5 gap-1 mt-5 cursor-pointer">
+            <p className=" mt-5 mb-2">Select Size</p>
+            <div className="grid grid-cols-5 gap-1 cursor-pointer">
               {shoe.sizes.map((size) => {
                 return (
                   <label
