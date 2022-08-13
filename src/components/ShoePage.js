@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { useState } from "react";
 import "./ShoePage.css";
 import { addToCart } from "../features/cart/cartSlice";
+import { addToSavedItems } from "../features/saveItem/saveItemSlice";
 
 function ShoePage() {
   const initialCartButtonText = "Add to Bag";
@@ -28,6 +29,15 @@ function ShoePage() {
     setTimeout(() => {
       setCartButtonText(initialCartButtonText);
     }, 1000);
+  };
+
+  const handleSaveItem = () => {
+    const { id } = shoe;
+    const selectedShoe = {
+      id,
+      size: selectedSize,
+    };
+    dispatch(addToSavedItems(selectedShoe));
   };
 
   return (
@@ -80,7 +90,10 @@ function ShoePage() {
               >
                 {cartButtonText}
               </button>
-              <button className="border border-lightgrayBorder w-[300px] p-2 mb-3 rounded">
+              <button
+                onClick={handleSaveItem}
+                className="border border-lightgrayBorder w-[300px] p-2 mb-3 rounded"
+              >
                 Save to List
               </button>
             </div>
