@@ -13,6 +13,7 @@ import Layout from "./components/Layout";
 import ShoePage from "./components/ShoePage";
 import store from "./store";
 import { Provider } from "react-redux";
+import SavedItemsPage from "./components/SavedItemsPage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -29,6 +30,7 @@ root.render(
             <Route path="shoes/:shoeId" element={<ShoePage />} />
             <Route path="men" element={<Men />} />
             <Route path="women" element={<Women />} />
+            <Route path="saved" element={<SavedItemsPage />} />
           </Route>
         </Routes>
       </BrowserRouter>
