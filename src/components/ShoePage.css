@@ -3,5 +3,6 @@
 }
 
 .selected {
-  --th-primary: var(--th-primary);
+  background-color: var(--th-primary);
+  color: var(--th-secondary);
 }
