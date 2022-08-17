@@ -1,12 +1,12 @@
-import Men from "./components/Men";
-import Women from "./components/Women";
+import MensCatalog from "./components/MensCatalog";
+import WomensCatalog from "./components/WomensCatalog";
 
 function App() {
   return (
     <div className="App">
       <div>
-        <Men />
-        <Women />
+        <MensCatalog />
+        <WomensCatalog />
       </div>
     </div>
   );

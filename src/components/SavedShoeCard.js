@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import ShoeCard from "./ShoeCard";
 
-function SavedItemsCard(props) {
+function SavedShoeCard(props) {
   const shoeFromCatalog = useSelector((state) => {
     return state.shoeCatalog.shoes.find((item) => {
       return item.id === props.id;
@@ -21,4 +21,4 @@ function SavedItemsCard(props) {
   );
 }
 
-export default SavedItemsCard;
+export default SavedShoeCard;

@@ -6,14 +6,14 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import SignIn from "./components/SignIn";
-import Cart from "./components/Cart";
-import Men from "./components/Men";
-import Women from "./components/Women";
+import CartPage from "./components/CartPage";
+import MensCatalog from "./components/MensCatalog";
+import WomensCatalog from "./components/WomensCatalog";
 import Layout from "./components/Layout";
 import ShoePage from "./components/ShoePage";
 import store from "./store";
 import { Provider } from "react-redux";
-import SavedItemsPage from "./components/SavedItemsPage";
+import SavedShoePage from "./components/SavedShoePage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -26,11 +26,11 @@ root.render(
             <Route path="about" element={<About />} />
             <Route path="contact" element={<Contact />} />
             <Route path="signin" element={<SignIn />} />
-            <Route path="cart" element={<Cart />} />
+            <Route path="cart" element={<CartPage />} />
             <Route path="shoes/:shoeId" element={<ShoePage />} />
-            <Route path="men" element={<Men />} />
-            <Route path="women" element={<Women />} />
-            <Route path="saved" element={<SavedItemsPage />} />
+            <Route path="men" element={<MensCatalog />} />
+            <Route path="women" element={<WomensCatalog />} />
+            <Route path="saved" element={<SavedShoePage />} />
           </Route>
         </Routes>
       </BrowserRouter>

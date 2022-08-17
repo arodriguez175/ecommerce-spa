@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from "react-redux";
 import { removeFromCart } from "../features/cart/cartSlice";
 
-function CartShoe(props) {
+function CartShoeCard(props) {
   const shoeInCart = useSelector((state) => {
     return state.shoeCatalog.shoes.find((item) => {
       return item.id === props.id;
@@ -35,4 +35,4 @@ function CartShoe(props) {
   );
 }
 
-export default CartShoe;
+export default CartShoeCard;

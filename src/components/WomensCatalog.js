@@ -1,12 +1,12 @@
-import { mensShoes } from "../mocks";
+import { womensShoes } from "../mocks";
 import ShoeCard from "./ShoeCard";
 
-function Men() {
+function WomensCatalog() {
   return (
-    <div className="men">
-      <h2 className="text-center text-2xl m-5">Men's Shoes</h2>
+    <div className="women">
+      <h2 className="text-center text-2xl m-5">Women's Shoes</h2>
       <div className="grid grid-cols-3 gap-10 mx-20">
-        {mensShoes.map((shoe) => (
+        {womensShoes.map((shoe) => (
           <ShoeCard
             key={shoe.id}
             id={shoe.id}
@@ -20,4 +20,4 @@ function Men() {
   );
 }
 
-export default Men;
+export default WomensCatalog;

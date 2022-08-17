@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
-import CartShoe from "./CartShoe";
+import CartShoeCard from "./CartShoeCard";
 
-function Cart() {
+function CartPage() {
   const bag = useSelector((state) => {
     return state.cart.cart;
   });
@@ -34,7 +34,7 @@ function Cart() {
             <div className="col-span-2">
               {bag.map((shoe, index) => {
                 return (
-                  <CartShoe
+                  <CartShoeCard
                     id={shoe.id}
                     size={shoe.size}
                     key={index}
@@ -77,4 +77,4 @@ function Cart() {
     </div>
   );
 }
-export default Cart;
+export default CartPage;

@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
-import SavedItemsCard from "./SavedItemsCard";
+import SavedShoeCard from "./SavedShoeCard";
 
-function SavedItemsPage() {
+function SavedShoePage() {
   const savedItems = useSelector((state) => {
     return state.saveItem.savedItems;
   });
@@ -9,10 +9,10 @@ function SavedItemsPage() {
   return (
     <div>
       {savedItems.map((item, index) => (
-        <SavedItemsCard key={index} id={item.id} size={item.size} />
+        <SavedShoeCard key={index} id={item.id} size={item.size} />
       ))}
     </div>
   );
 }
 
-export default SavedItemsPage;
+export default SavedShoePage;
