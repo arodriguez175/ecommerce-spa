@@ -16,6 +16,7 @@ function SavedShoeCard(props) {
         name={shoeFromCatalog.name}
         price={shoeFromCatalog.price}
         size={props.size}
+        gender={shoeFromCatalog.gender}
       />
     </div>
   );

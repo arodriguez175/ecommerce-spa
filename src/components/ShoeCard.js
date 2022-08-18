@@ -6,6 +6,7 @@ function ShoeCard(props) {
       <div>
         <img src={props.image} className="drop-shadow-md rounded-xl" />
         <p className="text-[16pt] mt-3">{props.name}</p>
+        <p>{props.gender}</p>
         <p className="text-[16pt]">${props.price}</p>
       </div>
     </Link>
