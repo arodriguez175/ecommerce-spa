@@ -13,31 +13,31 @@ function Footer() {
       <div className="bottom-0 grid grid-cols-4 mb-8 text-sm [&>*>*]:mb-3">
         <ul>
           <li>
-            <Link to="#">GIFT CARDS</Link>
+            <Link to="#">Gift Cards</Link>
           </li>
           <li>
-            <Link to="#">PROMOTIONS</Link>
+            <Link to="#">Promotions</Link>
           </li>
           <li>
-            <Link to="#">FIND A STORE</Link>
+            <Link to="#">Find a Store</Link>
           </li>
           <li>
-            <Link to="#">SIGN UP FOR EMAIL</Link>
+            <Link to="#">Sign up for Email</Link>
           </li>
           <li>
-            <Link to="#">BECOME A MEMBER</Link>
+            <Link to="#">Become a Member</Link>
           </li>
           <li>
-            <Link to="#">MERCURY JOURNAL</Link>
+            <Link to="#">Mercury Journal</Link>
           </li>
           <li>
-            <Link to="#">SEND US FEEDBACK</Link>
+            <Link to="#">Send us Feedback</Link>
           </li>
         </ul>
 
         <ul>
           <li>
-            <Link to="#">GET HELP</Link>
+            <Link to="#">Get Help</Link>
           </li>
           <li>
             <Link to="#">Order Status</Link>
@@ -61,7 +61,7 @@ function Footer() {
 
         <ul>
           <li>
-            <Link to="#">ABOUT MERCURY</Link>
+            <Link to="#">About Mercury</Link>
           </li>
           <li>
             <Link to="#">News</Link>

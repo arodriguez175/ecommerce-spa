@@ -2,7 +2,7 @@ import Search from "./Search";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBagShopping } from "@fortawesome/free-solid-svg-icons";
+import { faBagShopping, faHeart } from "@fortawesome/free-solid-svg-icons";
 
 function Header() {
   const cartLength = useSelector((state) => state.cart.cart)
@@ -60,6 +60,19 @@ function Header() {
           className="hover:border border-lightgrayBorder hover:m-[-1px] rounded p-3"
         >
           Sign in
+        </Link>
+
+        <Link
+          to="/saved"
+          className="hover:border border-lightgrayBorder hover:m-[-1px] rounded p-3 relative"
+        >
+          <FontAwesomeIcon
+            icon={faHeart}
+            className="text-[25px] text-primary"
+          />
+          <span className="bg-red text-secondary rounded-full min-w-[1rem] w-auto text-center text-[0.7rem] absolute top-2 right-[2px]">
+            {/* {cartLength > 0 ? cartLength : ""} */}
+          </span>
         </Link>
 
         <Link
