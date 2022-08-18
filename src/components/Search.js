@@ -11,7 +11,7 @@ function Search() {
   const listBox = {
     displayField: "name",
     data: shoeCatalog,
-    searchType: "startsWith",
+    searchType: "contains",
   };
 
   const styles = {
