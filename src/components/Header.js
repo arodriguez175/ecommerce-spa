@@ -13,7 +13,7 @@ function Header() {
 
   return (
     <div className="header">
-      <div className="flex gap-4">
+      <div className="flex gap-2">
         <Link to="/" className="text-red p-3">
           Mercury
         </Link>
@@ -55,38 +55,40 @@ function Header() {
 
         <Search />
 
-        <Link
-          to="/signin"
-          className="hover:border border-lightgrayBorder hover:m-[-1px] rounded p-3"
-        >
-          Sign in
-        </Link>
+        <div className="ml-auto flex gap-2">
+          <Link
+            to="/signin"
+            className="hover:border border-lightgrayBorder hover:m-[-1px] rounded p-3"
+          >
+            Sign in
+          </Link>
 
-        <Link
-          to="/saved"
-          className="hover:border border-lightgrayBorder hover:m-[-1px] rounded p-3 relative"
-        >
-          <FontAwesomeIcon
-            icon={faHeart}
-            className="text-[25px] text-primary"
-          />
-          <span className="bg-red text-secondary rounded-full min-w-[1rem] w-auto text-center text-[0.7rem] absolute top-2 right-[2px]">
-            {/* {cartLength > 0 ? cartLength : ""} */}
-          </span>
-        </Link>
+          <Link
+            to="/saved"
+            className="hover:border border-lightgrayBorder hover:m-[-1px] rounded p-3 relative"
+          >
+            <FontAwesomeIcon
+              icon={faHeart}
+              className="text-[25px] text-primary"
+            />
+            <span className="bg-red text-secondary rounded-full min-w-[1rem] w-auto text-center text-[0.7rem] absolute top-2 right-[2px]">
+              {/* {cartLength > 0 ? cartLength : ""} */}
+            </span>
+          </Link>
 
-        <Link
-          to="/cart"
-          className="hover:border border-lightgrayBorder hover:m-[-1px] rounded p-3 relative"
-        >
-          <FontAwesomeIcon
-            icon={faBagShopping}
-            className="text-[25px] text-primary"
-          />
-          <span className="bg-red text-secondary rounded-full min-w-[1rem] w-auto text-center text-[0.7rem] absolute top-2 right-[2px]">
-            {cartLength > 0 ? cartLength : ""}
-          </span>
-        </Link>
+          <Link
+            to="/cart"
+            className="hover:border border-lightgrayBorder hover:m-[-1px] rounded p-3 relative"
+          >
+            <FontAwesomeIcon
+              icon={faBagShopping}
+              className="text-[25px] text-primary"
+            />
+            <span className="bg-red text-secondary rounded-full min-w-[1rem] w-auto text-center text-[0.7rem] absolute top-2 right-[2px]">
+              {cartLength > 0 ? cartLength : ""}
+            </span>
+          </Link>
+        </div>
       </div>
     </div>
   );

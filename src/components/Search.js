@@ -16,7 +16,7 @@ function Search() {
 
   const styles = {
     input:
-      "border border-lightgrayBorder shadow 1px 2px 3px rounded p-3 w-[600px] focus:outline-none",
+      "border border-lightgrayBorder shadow 1px 2px 3px rounded p-3 w-[400px] focus:outline-none",
     listbox:
       "w-full border border-[#f6f6f6] bg-secondary rounded text-left mt-2 p-3 [&>*]:leading-8 drop-shadow-xl",
     highlightedItem:
