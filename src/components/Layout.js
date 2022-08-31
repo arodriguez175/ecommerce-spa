@@ -5,7 +5,7 @@ import Header from "./Header";
 function Layout() {
   return (
     <div>
-      <div className="pt-6 px-6">
+      <div className="pt-1 px-1 md:pt-6 md:px-6">
         <Header />
         <Outlet />
       </div>
