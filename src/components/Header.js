@@ -15,12 +15,16 @@ function Header() {
     })
     .reduce((first, last) => first + last, 0);
 
+  const savedItemsLength = useSelector(
+    (state) => state.saveItem.savedItems.length
+  );
+
   return (
     <div className="antialiased">
       <header>
         <nav
           className="
-          flex flex-wrap
+          flex flex-wrap lg:flex-nowrap
           items-center
           justify-between
           w-full
@@ -38,22 +42,23 @@ function Header() {
             <FontAwesomeIcon icon={faBars} />
           </button>
 
-          <Link to="/" className="text-red p-3 order-2">
+          <Link to="/" className="text-red p-3 md:mr-[12px] order-2">
             Mercury
           </Link>
 
           <div
-            className="hidden w-full md:flex md:items-center md:w-auto order-4"
+            className="hidden w-full md:flex md:items-center md:w-auto order-4 md:order-2"
             id="menu"
           >
             <ul
               className="
               text-base
               pt-4
+              text-center
               md:flex
               md:justify-between
               md:pt-0
-              text-center"
+              md:gap-3"
             >
               <li>
                 <Link
@@ -107,9 +112,9 @@ function Header() {
           </div>
 
           {/*  */}
-          <Search className="order-4" />
+          <Search className="order-4 md:order-3" />
 
-          <div className="md:ml-auto flex order-3">
+          <div className="md:ml-auto flex order-3 md:order-4 md:gap-3">
             <Link
               to="/saved"
               className="hover:border border-lightgrayBorder hover:m-[-1px] rounded md:p-3 py-2 block p-3 relative"
@@ -119,7 +124,7 @@ function Header() {
                 className="text-[25px] text-primary"
               />
               <span className="bg-red text-secondary rounded-full min-w-[1rem] w-auto text-center text-[0.7rem] absolute top-2 right-[2px]">
-                {/* {cartLength > 0 ? cartLength : ""} */}
+                {savedItemsLength > 0 ? savedItemsLength : ""}
               </span>
             </Link>
 

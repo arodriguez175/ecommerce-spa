@@ -24,7 +24,7 @@ function Search(props) {
   };
 
   return (
-    <div className={`flex mt-3 ${props.className}`}>
+    <div className={`flex mt-3 md:m-3 ${props.className}`}>
       <Turnstone
         listbox={listBox}
         typeahead={true}
