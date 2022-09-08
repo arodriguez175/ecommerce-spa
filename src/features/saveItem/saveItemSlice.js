@@ -10,9 +10,15 @@ export const saveItemSlice = createSlice({
     addToSavedItems: (state, action) => {
       state.savedItems = [...state.savedItems, action.payload];
     },
+    removeSavedItem: (state, action) => {
+      const array = [...state.savedItems];
+      const index = action.payload;
+      array.splice(index, 1);
+      state.savedItems = array;
+    },
   },
 });
 
-export const { addToSavedItems } = saveItemSlice.actions;
+export const { addToSavedItems, removeSavedItem } = saveItemSlice.actions;
 
 export default saveItemSlice.reducer;

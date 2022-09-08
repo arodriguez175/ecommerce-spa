@@ -4,7 +4,7 @@ import ShoeCard from "./ShoeCard";
 function WomensCatalog() {
   const womensShoes = useSelector((state) => {
     return state.shoeCatalog.shoes.filter((shoe) =>
-      shoe.gender.includes("women")
+      shoe.gender.includes("Women")
     );
   });
 

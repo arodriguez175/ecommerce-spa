@@ -111,7 +111,6 @@ function Header() {
             </ul>
           </div>
 
-          {/*  */}
           <Search className="order-4 md:order-3" />
 
           <div className="md:ml-auto flex order-3 md:order-4 md:gap-3">

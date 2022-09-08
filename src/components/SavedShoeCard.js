@@ -1,5 +1,8 @@
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { removeSavedItem } from "../features/saveItem/saveItemSlice";
 import ShoeCard from "./ShoeCard";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 function SavedShoeCard(props) {
   const shoeFromCatalog = useSelector((state) => {
@@ -8,8 +11,11 @@ function SavedShoeCard(props) {
     });
   });
 
+  const dispatch = useDispatch();
+  const index = props.index;
+
   return (
-    <div>
+    <div className="relative">
       <ShoeCard
         id={shoeFromCatalog.id}
         image={shoeFromCatalog.imageURL}
@@ -18,6 +24,13 @@ function SavedShoeCard(props) {
         size={props.size}
         gender={shoeFromCatalog.gender}
       />
+      <button className="absolute top-0 right-0 p-4">
+        <FontAwesomeIcon
+          icon={faXmark}
+          className="text-[20px] text-lightgrayText"
+          onClick={() => dispatch(removeSavedItem(index))}
+        />
+      </button>
     </div>
   );
 }
