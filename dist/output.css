@@ -652,6 +652,21 @@ video {
   margin-right: 5rem;
 }
 
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.mx-8 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
 .mt-5 {
   margin-top: 1.25rem;
 }
@@ -780,8 +795,16 @@ video {
   width: 400px;
 }
 
-.w-5 {
-  width: 1.25rem;
+.w-\[100\%\] {
+  width: 100%;
+}
+
+.w-\[100px\] {
+  width: 100px;
+}
+
+.w-\[250px\] {
+  width: 250px;
 }
 
 .min-w-\[1rem\] {
@@ -1026,6 +1049,10 @@ video {
   font-size: 0.7rem;
 }
 
+.text-\[20px\] {
+  font-size: 20px;
+}
+
 .text-\[16pt\] {
   font-size: 16pt;
 }
@@ -1038,12 +1065,12 @@ video {
   font-size: 20pt;
 }
 
-.text-\[12px\] {
-  font-size: 12px;
+.text-\[11pt\] {
+  font-size: 11pt;
 }
 
-.text-\[20px\] {
-  font-size: 20px;
+.text-\[13pt\] {
+  font-size: 13pt;
 }
 
 .font-semibold {
@@ -1197,12 +1224,39 @@ video {
     margin: 0.75rem;
   }
 
+  .md\:mx-20 {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  .md\:mx-10 {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+
+  .md\:mx-8 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
   .md\:mr-\[12px\] {
     margin-right: 12px;
   }
 
   .md\:ml-auto {
     margin-left: auto;
+  }
+
+  .md\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
+  .md\:mt-5 {
+    margin-top: 1.25rem;
+  }
+
+  .md\:mt-3 {
+    margin-top: 0.75rem;
   }
 
   .md\:flex {
@@ -1215,6 +1269,18 @@ video {
 
   .md\:w-auto {
     width: auto;
+  }
+
+  .md\:w-\[400px\] {
+    width: 400px;
+  }
+
+  .md\:w-\[90\%\] {
+    width: 90%;
+  }
+
+  .md\:w-\[300px\] {
+    width: 300px;
   }
 
   .md\:grid-cols-3 {
@@ -1237,6 +1303,10 @@ video {
     padding: 0.75rem;
   }
 
+  .md\:p-2 {
+    padding: 0.5rem;
+  }
+
   .md\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -1247,6 +1317,11 @@ video {
     padding-right: 1.5rem;
   }
 
+  .md\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
   .md\:pt-0 {
     padding-top: 0px;
   }
@@ -1254,11 +1329,52 @@ video {
   .md\:pt-6 {
     padding-top: 1.5rem;
   }
+
+  .md\:text-\[28pt\] {
+    font-size: 28pt;
+  }
+
+  .md\:text-\[16pt\] {
+    font-size: 16pt;
+  }
+
+  .md\:text-\[24pt\] {
+    font-size: 24pt;
+  }
+
+  .md\:text-\[22pt\] {
+    font-size: 22pt;
+  }
+
+  .md\:text-\[10pt\] {
+    font-size: 10pt;
+  }
+
+  .md\:text-\[14pt\] {
+    font-size: 14pt;
+  }
 }
 
 @media (min-width: 1024px) {
+  .lg\:mx-20 {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  .lg\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
   .lg\:flex-nowrap {
     flex-wrap: nowrap;
+  }
+
+  .lg\:text-\[28pt\] {
+    font-size: 28pt;
+  }
+
+  .lg\:text-\[16pt\] {
+    font-size: 16pt;
   }
 }
 
