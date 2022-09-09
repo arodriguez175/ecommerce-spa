@@ -8,7 +8,17 @@ export const saveItemSlice = createSlice({
 
   reducers: {
     addToSavedItems: (state, action) => {
-      state.savedItems = [...state.savedItems, action.payload];
+      const newItem = action.payload;
+
+      const existingSavedItem = state.savedItems.find(
+        (savedItem) => savedItem.id === newItem.id
+      );
+      if (existingSavedItem) {
+        existingSavedItem.quantity += 1;
+      } else {
+        newItem.quantity = 1;
+        state.savedItems = [...state.savedItems, newItem];
+      }
     },
     removeSavedItem: (state, action) => {
       const array = [...state.savedItems];
