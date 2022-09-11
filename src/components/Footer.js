@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
     <div className="footer bg-primary text-secondary pt-10 px-10 pb-4 mt-[100px]">
-      <div className="bottom-0 grid grid-cols-4 mb-8 text-sm [&>*>*]:mb-3">
+      <div className="bottom-0 grid grid-cols-1 md:grid-cols-4 mb-8 text-sm [&>*>*]:mb-3">
         <ul>
           <li>
             <Link to="#">Gift Cards</Link>
@@ -77,17 +77,17 @@ function Footer() {
           </li>
         </ul>
 
-        <div className="[&>*]:ml-4 text-[25px] absolute right-0 mr-[40px]">
+        <div className="text-[25px] md:absolute md:right-0 md:mr-[40px]">
           <Link to="#">
             <FontAwesomeIcon icon={faTwitter} />
           </Link>
-          <Link to="#">
+          <Link to="#" className="ml-4">
             <FontAwesomeIcon icon={faYoutube} />
           </Link>
-          <Link to="#">
+          <Link to="#" className="ml-4">
             <FontAwesomeIcon icon={faFacebook} />
           </Link>
-          <Link to="#">
+          <Link to="#" className="ml-4">
             <FontAwesomeIcon icon={faInstagram} />
           </Link>
         </div>
@@ -98,12 +98,21 @@ function Footer() {
           &copy; {new Date().getFullYear()} Mercury, Inc. All Rights Reserved
         </p>
 
-        <div className="flex float-right [&>*]:ml-6">
-          <Link to="#">Guides</Link>
-          <Link to="#">Terms of Sale</Link>
-          <Link to="#">Terms of Use</Link>
-          <Link to="#">Mercury Privacy Policy</Link>
-        </div>
+        <ul className="[&>*]:mt-3 md:flex md:float-right md:[&>*]:ml-6">
+          <br />
+          <li>
+            <Link to="#">Guides</Link>
+          </li>
+          <li>
+            <Link to="#">Terms of Sale</Link>
+          </li>
+          <li>
+            <Link to="#">Terms of Use</Link>
+          </li>
+          <li>
+            <Link to="#">Mercury Privacy Policy</Link>
+          </li>
+        </ul>
       </div>
       <div className="clear-both"></div>
     </div>
