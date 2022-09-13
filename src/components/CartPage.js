@@ -20,7 +20,7 @@ function CartPage() {
   }
 
   return (
-    <div className="cart mx-[1rem] md:mx-[5rem]">
+    <div className="cart mx-[1rem] lg:mx-[5rem]">
       {bag.length ? (
         <div>
           <h2 className="md:mt-5 mb-5 md:mr-5 text-center md:text-left">
@@ -49,7 +49,7 @@ function CartPage() {
               <h2 className="text-2xl mb-3 text-center md:text-left">
                 Order Summary
               </h2>
-              <div className="[&>*>*]:float-right">
+              <div className="[&>*>*]:float-right text-[10pt] lg:text-[12pt]">
                 <p>
                   Subtotal <span>{numberFormatter.format(total)}</span>
                 </p>
@@ -65,7 +65,7 @@ function CartPage() {
                 </p>
               </div>
 
-              <button className="bg-primary hover:bg-darkgray text-secondary w-full md:w-[300px] p-[10px] rounded mt-3">
+              <button className="bg-primary hover:bg-darkgray text-secondary w-full lg:w-[300px] p-[10px] rounded mt-3">
                 Checkout
               </button>
             </div>

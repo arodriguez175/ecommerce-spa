@@ -1070,6 +1070,10 @@ video {
   font-size: 15pt;
 }
 
+.text-\[10pt\] {
+  font-size: 10pt;
+}
+
 .font-semibold {
   font-weight: 600;
 }
@@ -1204,6 +1208,12 @@ video {
   outline-offset: 2px;
 }
 
+@media (min-width: 640px) {
+  .sm\:text-\[10pt\] {
+    font-size: 10pt;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:absolute {
     position: absolute;
@@ -1255,6 +1265,11 @@ video {
   .md\:mx-auto {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .md\:mx-\[2rem\] {
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 
   .md\:mr-\[40px\] {
@@ -1325,6 +1340,10 @@ video {
     width: 600px;
   }
 
+  .md\:w-\[204px\] {
+    width: 204px;
+  }
+
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -1391,6 +1410,11 @@ video {
   .md\:text-\[12pt\] {
     font-size: 12pt;
   }
+
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1399,8 +1423,21 @@ video {
     margin-right: 5rem;
   }
 
+  .lg\:mx-\[5rem\] {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
   .lg\:mt-10 {
     margin-top: 2.5rem;
+  }
+
+  .lg\:w-\[300px\] {
+    width: 300px;
+  }
+
+  .lg\:w-\[600px\] {
+    width: 600px;
   }
 
   .lg\:flex-nowrap {
@@ -1413,6 +1450,15 @@ video {
 
   .lg\:text-\[16pt\] {
     font-size: 16pt;
+  }
+
+  .lg\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .lg\:text-\[12pt\] {
+    font-size: 12pt;
   }
 }
 

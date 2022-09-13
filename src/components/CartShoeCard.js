@@ -15,7 +15,7 @@ function CartShoeCard(props) {
     <div className="md:flex mb-8 p-4 border border-lightgrayBorder shadow-md rounded-lg">
       <img src={shoeInCart.imageURL} className="md:w-[200px]" />
 
-      <div className="md:ml-8 md:w-[600px]">
+      <div className="md:ml-8 md:w-[204px] lg:w-[600px]">
         <p className="font-bold">{shoeInCart.name}</p>
         <div className="text-lightgrayText">
           <p>{shoeInCart.gender}</p>
