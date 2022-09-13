@@ -24,7 +24,7 @@ function SavedShoeCard(props) {
         size={props.size}
         gender={shoeFromCatalog.gender}
       />
-      <button className="absolute top-0 right-0 p-4">
+      <button className="absolute top-0 right-0 p-4 md:p-2 lg:p-4">
         <FontAwesomeIcon
           icon={faXmark}
           className="text-[20px] text-lightgrayText"
