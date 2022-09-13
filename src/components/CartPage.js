@@ -20,18 +20,18 @@ function CartPage() {
   }
 
   return (
-    <div className="cart mx-[5rem]">
+    <div className="cart mx-[1rem] md:mx-[5rem]">
       {bag.length ? (
         <div>
-          <h2 className="mt-5 mb-5 mr-5">
+          <h2 className="md:mt-5 mb-5 md:mr-5 text-center md:text-left">
             <span className="text-2xl">Bag</span>
             <span>{` (${bag
               .map((item) => item.quantity)
               .reduce((first, last) => first + last, 0)} items)`}</span>
           </h2>
 
-          <div className="grid grid-cols-3 gap-3">
-            <div className="col-span-2">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+            <div className="md:col-span-2">
               {bag.map((shoe, index) => {
                 return (
                   <CartShoeCard
@@ -45,8 +45,10 @@ function CartPage() {
               })}
             </div>
 
-            <div className="col-span-1 mx-auto leading-loose">
-              <h2 className="text-2xl mb-3">Order Summary</h2>
+            <div className="col-span-1 md:mx-auto leading-loose">
+              <h2 className="text-2xl mb-3 text-center md:text-left">
+                Order Summary
+              </h2>
               <div className="[&>*>*]:float-right">
                 <p>
                   Subtotal <span>{numberFormatter.format(total)}</span>
@@ -63,7 +65,7 @@ function CartPage() {
                 </p>
               </div>
 
-              <button className="bg-primary hover:bg-darkgray text-secondary w-[300px] p-[10px] rounded mt-3">
+              <button className="bg-primary hover:bg-darkgray text-secondary w-full md:w-[300px] p-[10px] rounded mt-3">
                 Checkout
               </button>
             </div>
