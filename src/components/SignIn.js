@@ -1,9 +1,41 @@
 function SignIn() {
   return (
-    <div className="signin">
-      <h2>Sign in</h2>
-      <input />
-      <button>Enter</button>
+    <div className="mx-4 md:mx-[115px] lg:mx-[230px] mt-5 border border-lightgrayBorder rounded-xl">
+      <h2 className="text-center text-2xl m-1 md:m-3">Sign in</h2>
+      <form className="text-center mx-3 [&>*]:mb-3 md:mx-12">
+        <input
+          placeholder="Email"
+          className="bg-lightgrayBorder p-3 w-full lg:w-[50%]"
+        />
+        <br />
+        <input
+          placeholder="Password"
+          className="bg-lightgrayBorder p-3 w-full lg:w-[50%]"
+        />
+        <br />
+
+        <div className="md:flex md:justify-between lg:justify-evenly lg:mx-[80px]">
+          <div className="mb-3">
+            <label>Keep me logged in</label>
+            <input type="checkbox" className="ml-2" />
+          </div>
+
+          <a href="#">Forgot password?</a>
+        </div>
+
+        <p className="text-[9pt]">
+          By creating an account you agree to our Terms & Privacy
+        </p>
+
+        <div className="grid md:inline">
+          <button className="bg-primary text-secondary p-4 mb-3 md:mx-2 md:w-[100px]">
+            Log In
+          </button>
+          <button className="bg-lightgrayBorder p-4 md:mx-2 md:w-[100px]">
+            Sign Up
+          </button>
+        </div>
+      </form>
     </div>
   );
 }
