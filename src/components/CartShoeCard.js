@@ -18,7 +18,7 @@ function CartShoeCard(props) {
       <div className="md:ml-8 md:w-[204px] lg:w-[600px]">
         <p className="font-bold">{shoeInCart.name}</p>
         <div className="text-lightgrayText">
-          <p>{shoeInCart.gender}</p>
+          <p>{shoeInCart.gender.length > 1 ? "Unisex" : shoeInCart.gender}</p>
           <p>Color: {shoeInCart.color}</p>
           <p>Size: {props.size}</p>
           <p>Qty: {props.qty}</p>

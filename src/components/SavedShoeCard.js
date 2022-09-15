@@ -22,7 +22,9 @@ function SavedShoeCard(props) {
         name={shoeFromCatalog.name}
         price={shoeFromCatalog.price}
         size={props.size}
-        gender={shoeFromCatalog.gender}
+        gender={
+          shoeFromCatalog.gender.length > 1 ? "Unisex" : shoeFromCatalog.gender
+        }
       />
       <button className="absolute top-0 right-0 p-4 md:p-2 lg:p-4">
         <FontAwesomeIcon
