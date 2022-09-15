@@ -122,7 +122,7 @@ function Header() {
                 icon={faHeart}
                 className="text-[25px] text-primary"
               />
-              <span className="bg-red text-secondary rounded-full min-w-[1rem] w-auto text-center text-[0.7rem] absolute top-2 right-[2px]">
+              <span className="bg-red text-secondary font-bold rounded-full min-w-[1rem] w-auto text-center text-[0.7rem] absolute top-2 right-[2px]">
                 {savedItemsLength > 0 ? savedItemsLength : ""}
               </span>
             </Link>
@@ -135,7 +135,7 @@ function Header() {
                 icon={faBagShopping}
                 className="text-[25px] text-primary"
               />
-              <span className="bg-red text-secondary rounded-full min-w-[1rem] w-auto text-center text-[0.7rem] absolute top-2 right-[2px]">
+              <span className="bg-red text-secondary font-bold rounded-full min-w-[1rem] w-auto text-center text-[0.7rem] absolute top-2 right-[2px]">
                 {cartLength > 0 ? cartLength : ""}
               </span>
             </Link>

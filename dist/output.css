@@ -1180,6 +1180,10 @@ video {
   font-weight: 700;
 }
 
+.font-extrabold {
+  font-weight: 800;
+}
+
 .leading-loose {
   line-height: 2;
 }
@@ -1420,6 +1424,10 @@ video {
     margin-top: 0.75rem;
   }
 
+  .md\:ml-4 {
+    margin-left: 1rem;
+  }
+
   .md\:inline {
     display: inline;
   }
@@ -1545,6 +1553,19 @@ video {
 
   .md\:text-\[14pt\] {
     font-size: 14pt;
+  }
+
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .md\:text-\[10pt\] {
+    font-size: 10pt;
+  }
+
+  .md\:text-\[11pt\] {
+    font-size: 11pt;
   }
 }
 

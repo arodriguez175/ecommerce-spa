@@ -60,8 +60,9 @@ function CartPage() {
                   Estimated Shipping<span className="text-green">Free</span>
                 </p>
 
-                <p className="font-semibold">
-                  Estimated Total <span>{numberFormatter.format(total)}</span>
+                <p className="font-semibold text-[15pt] md:text-[11pt]">
+                  Estimated Total{" "}
+                  <span className="ml-4">{numberFormatter.format(total)}</span>
                 </p>
               </div>
 
