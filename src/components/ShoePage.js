@@ -56,7 +56,7 @@ function ShoePage() {
               {shoe.name}
             </p>
             <p className="text-[13pt] md:text-[14pt] lg:text-[16pt]">
-              {shoe.gender}
+              {shoe.gender.length > 1 ? "Unisex" : shoe.gender}
             </p>
             <p className="text-[13pt] md:text-[14pt] lg:text-[16pt]">
               ${shoe.price}
