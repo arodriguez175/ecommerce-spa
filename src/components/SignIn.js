@@ -6,11 +6,15 @@ function SignIn() {
         <input
           placeholder="Email"
           className="bg-lightgrayBorder p-3 w-full lg:w-[50%]"
+          type="text"
+          required
         />
         <br />
         <input
           placeholder="Password"
           className="bg-lightgrayBorder p-3 w-full lg:w-[50%]"
+          type="password"
+          required
         />
         <br />
 
@@ -20,15 +24,23 @@ function SignIn() {
             <input type="checkbox" className="ml-2" />
           </div>
 
-          <a href="#">Forgot password?</a>
+          <a href="#" className="text-[dodgerblue] underline">
+            Forgot password?
+          </a>
         </div>
 
         <p className="text-[9pt]">
-          By creating an account you agree to our Terms & Privacy
+          By creating an account you agree to our{" "}
+          <a href="#" className="text-[dodgerblue] underline">
+            Terms & Privacy
+          </a>
         </p>
 
         <div className="grid md:inline">
-          <button className="bg-primary text-secondary p-4 mb-3 md:mx-2 md:w-[100px]">
+          <button
+            type="submit"
+            className="bg-primary text-secondary p-4 mb-3 md:mx-2 md:w-[100px]"
+          >
             Log In
           </button>
           <button className="bg-lightgrayBorder p-4 md:mx-2 md:w-[100px]">

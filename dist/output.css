@@ -1309,9 +1309,19 @@ video {
   color: var(--th-primary);
 }
 
+.text-\[dodgerblue\] {
+  --tw-text-opacity: 1;
+  color: rgb(30 144 255 / var(--tw-text-opacity));
+}
+
 .underline {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
+}
+
+.decoration-solid {
+  -webkit-text-decoration-style: solid;
+          text-decoration-style: solid;
 }
 
 .antialiased {
