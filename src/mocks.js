@@ -94,20 +94,6 @@ export const womensShoes = [
     gender: ["Women"],
   },
   {
-    id: 9,
-    imageURL:
-      "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/9bd58ab4-a823-407f-8f1b-9ea8a4c6c03a/air-max-270-mens-shoes-KkLcGR.png",
-    name: "Nike Air Max 270",
-    price: 136,
-    color: "University Red/Coconut Milk/Black/University Gold",
-    sku: "DQ7625-600",
-    sizes: [
-      5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13,
-      14, 15,
-    ],
-    gender: ["Women", "Men"],
-  },
-  {
     id: 10,
     imageURL:
       "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e4fdd0ab-cfbe-4abf-b735-2bd5e78b6065/blazer-mid-77-womens-shoes-pNnkgJ.png",
