@@ -1,5 +1,6 @@
 import { useSelector, useDispatch } from "react-redux";
 import { removeFromCart } from "../features/cart/cartSlice";
+import { Link } from "react-router-dom";
 
 function CartShoeCard(props) {
   const shoeInCart = useSelector((state) => {
@@ -13,7 +14,9 @@ function CartShoeCard(props) {
 
   return (
     <div className="md:flex mb-8 p-4 border border-lightgrayBorder shadow-md rounded-lg">
-      <img src={shoeInCart.imageURL} className="md:w-[200px]" />
+      <Link to={`/shoes/${props.id}`} key={props.id}>
+        <img src={shoeInCart.imageURL} className="md:w-[235px]" />
+      </Link>
 
       <div className="md:ml-8 md:w-[204px] lg:w-[600px]">
         <p className="font-bold">{shoeInCart.name}</p>
