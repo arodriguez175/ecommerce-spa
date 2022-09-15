@@ -47,6 +47,7 @@ function ShoePage() {
           <div>
             <img
               src={shoe.imageURL}
+              alt="Selected shoe."
               className="drop-shadow-md rounded-xl w-full md:w-[90%]"
             />
           </div>

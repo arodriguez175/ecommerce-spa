@@ -15,7 +15,7 @@ function CartShoeCard(props) {
   return (
     <div className="md:flex mb-8 p-4 border border-lightgrayBorder shadow-md rounded-lg">
       <Link to={`/shoes/${props.id}`} key={props.id}>
-        <img src={shoeInCart.imageURL} className="md:w-[235px]" />
+        <img src={shoeInCart.imageURL} alt="Shoe." className="md:w-[235px]" />
       </Link>
 
       <div className="md:ml-8 md:w-[204px] lg:w-[600px]">
