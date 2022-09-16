@@ -1180,6 +1180,14 @@ video {
   font-size: 9pt;
 }
 
+.text-\[12pt\] {
+  font-size: 12pt;
+}
+
+.text-\[14pt\] {
+  font-size: 14pt;
+}
+
 .font-semibold {
   font-weight: 600;
 }

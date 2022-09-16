@@ -19,7 +19,9 @@ function CartShoeCard(props) {
       </Link>
 
       <div className="md:ml-8 md:w-[204px] lg:w-[600px]">
-        <p className="font-bold">{shoeInCart.name}</p>
+        <p className="font-bold text-[16pt] md:text-[12pt]">
+          {shoeInCart.name}
+        </p>
         <div className="text-lightgrayText">
           <p>{shoeInCart.gender.length > 1 ? "Unisex" : shoeInCart.gender}</p>
           <p>Color: {shoeInCart.color}</p>
