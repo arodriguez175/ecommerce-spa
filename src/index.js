@@ -14,12 +14,14 @@ import ShoePage from "./components/ShoePage";
 import store from "./store";
 import { Provider } from "react-redux";
 import SavedShoePage from "./components/SavedShoePage";
+import ScrollToTop from "./components/ScrollToTop";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<App />} />
