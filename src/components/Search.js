@@ -38,7 +38,12 @@ function Search(props) {
         }}
         placeholder="Search for..."
       />
-      <button className="bg-primary text-secondary ml-1 rounded p-3 hover:bg-darkgray">
+      <button
+        className="bg-primary text-secondary ml-1 rounded p-3 hover:bg-darkgray"
+        onClick={() => {
+          navigate("/search");
+        }}
+      >
         Search
       </button>
     </div>
