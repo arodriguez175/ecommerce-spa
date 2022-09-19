@@ -30,6 +30,7 @@ function Search(props) {
         typeahead={true}
         ref={turnstoneRef}
         styles={styles}
+        id="turnstoneId"
         onSelect={(selectedItem) => {
           if (selectedItem) {
             navigate(`/shoes/${selectedItem.id}`);
@@ -41,7 +42,9 @@ function Search(props) {
       <button
         className="bg-primary text-secondary ml-1 rounded p-3 hover:bg-darkgray"
         onClick={() => {
-          navigate("/search");
+          navigate(
+            `/search?query=${document.querySelector("#turnstoneId").value}`
+          );
         }}
       >
         Search

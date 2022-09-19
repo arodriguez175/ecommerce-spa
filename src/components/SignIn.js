@@ -21,7 +21,7 @@ function SignIn() {
         <div className="md:flex md:justify-between lg:justify-evenly lg:mx-[80px]">
           <div className="mb-3">
             <label>Keep me logged in</label>
-            <input type="checkbox" className="ml-2" />
+            <input type="checkbox" className="ml-2 cursor-pointer" />
           </div>
 
           <a href="#" className="text-[dodgerblue] underline">

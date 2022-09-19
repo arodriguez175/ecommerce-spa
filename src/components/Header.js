@@ -42,7 +42,15 @@ function Header() {
             <FontAwesomeIcon icon={faBars} />
           </button>
 
-          <Link to="/" className="text-red p-3 md:mr-[12px] order-2">
+          <Link
+            to="/"
+            className="text-red p-3 md:mr-[12px] order-2"
+            onClick={() => {
+              let element = document.querySelector("#menu");
+              element.className =
+                "hidden w-full md:flex md:items-center md:w-auto order-4 md:order-2";
+            }}
+          >
             Mercury
           </Link>
 
@@ -64,6 +72,11 @@ function Header() {
                 <Link
                   to="/"
                   className="hover:border border-lightgrayBorder hover:m-[-1px] rounded md:p-3 py-2 block p-3"
+                  onClick={() => {
+                    let element = document.querySelector("#menu");
+                    element.className =
+                      "hidden w-full md:flex md:items-center md:w-auto order-4 md:order-2";
+                  }}
                 >
                   Home
                 </Link>
@@ -72,6 +85,11 @@ function Header() {
                 <Link
                   to="about"
                   className="hover:border border-lightgrayBorder hover:m-[-1px] rounded md:p-3 py-2 block p-3"
+                  onClick={() => {
+                    let element = document.querySelector("#menu");
+                    element.className =
+                      "hidden w-full md:flex md:items-center md:w-auto order-4 md:order-2";
+                  }}
                 >
                   About
                 </Link>
@@ -80,6 +98,11 @@ function Header() {
                 <Link
                   to="contact"
                   className="hover:border border-lightgrayBorder hover:m-[-1px] rounded md:p-3 py-2 block p-3"
+                  onClick={() => {
+                    let element = document.querySelector("#menu");
+                    element.className =
+                      "hidden w-full md:flex md:items-center md:w-auto order-4 md:order-2";
+                  }}
                 >
                   Contact
                 </Link>
@@ -88,6 +111,11 @@ function Header() {
                 <Link
                   to="/men"
                   className="border border-lightgrayBorder m-[-1px] hover:bg-primary hover:text-secondary rounded md:p-3 py-2 block p-3"
+                  onClick={() => {
+                    let element = document.querySelector("#menu");
+                    element.className =
+                      "hidden w-full md:flex md:items-center md:w-auto order-4 md:order-2";
+                  }}
                 >
                   Men
                 </Link>
@@ -96,6 +124,11 @@ function Header() {
                 <Link
                   to="/women"
                   className="border border-lightgrayBorder m-[-1px] hover:bg-primary hover:text-secondary rounded md:p-3 py-2 block p-3"
+                  onClick={() => {
+                    let element = document.querySelector("#menu");
+                    element.className =
+                      "hidden w-full md:flex md:items-center md:w-auto order-4 md:order-2";
+                  }}
                 >
                   Women
                 </Link>
@@ -104,6 +137,11 @@ function Header() {
                 <Link
                   to="/signin"
                   className="hover:border border-lightgrayBorder hover:m-[-1px] rounded md:p-3 py-2 block p-3"
+                  onClick={() => {
+                    let element = document.querySelector("#menu");
+                    element.className =
+                      "hidden w-full md:flex md:items-center md:w-auto order-4 md:order-2";
+                  }}
                 >
                   Sign in
                 </Link>
@@ -117,6 +155,11 @@ function Header() {
             <Link
               to="/saved"
               className="hover:border border-lightgrayBorder hover:m-[-1px] rounded md:p-3 py-2 block p-3 relative"
+              onClick={() => {
+                let element = document.querySelector("#menu");
+                element.className =
+                  "hidden w-full md:flex md:items-center md:w-auto order-4 md:order-2";
+              }}
             >
               <FontAwesomeIcon
                 icon={faHeart}
@@ -130,6 +173,11 @@ function Header() {
             <Link
               to="/cart"
               className="hover:border border-lightgrayBorder hover:m-[-1px] rounded md:p-3 py-2 block p-3 relative"
+              onClick={() => {
+                let element = document.querySelector("#menu");
+                element.className =
+                  "hidden w-full md:flex md:items-center md:w-auto order-4 md:order-2";
+              }}
             >
               <FontAwesomeIcon
                 icon={faBagShopping}
