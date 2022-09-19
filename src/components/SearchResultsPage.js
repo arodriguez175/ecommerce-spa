@@ -19,16 +19,19 @@ function SearchResultsPage() {
 
   return (
     <div>
-      {searchResultsCatalaog.map((shoe) => (
-        <ShoeCard
-          key={shoe.id}
-          id={shoe.id}
-          image={shoe.imageURL}
-          name={shoe.name}
-          gender={shoe.gender.length > 1 ? "Unisex" : shoe.gender}
-          price={shoe.price}
-        />
-      ))}
+      <h2 className="text-center text-2xl m-5">Search Results</h2>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mx-10 md:mx-20">
+        {searchResultsCatalaog.map((shoe) => (
+          <ShoeCard
+            key={shoe.id}
+            id={shoe.id}
+            image={shoe.imageURL}
+            name={shoe.name}
+            gender={shoe.gender.length > 1 ? "Unisex" : shoe.gender}
+            price={shoe.price}
+          />
+        ))}
+      </div>
     </div>
   );
 }
