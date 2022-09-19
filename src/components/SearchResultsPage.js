@@ -25,7 +25,7 @@ function SearchResultsPage() {
           id={shoe.id}
           image={shoe.imageURL}
           name={shoe.name}
-          gender={shoe.gender}
+          gender={shoe.gender.length > 1 ? "Unisex" : shoe.gender}
           price={shoe.price}
         />
       ))}
