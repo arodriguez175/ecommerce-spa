@@ -11,6 +11,7 @@ function Layout() {
         <a
           href="https://github.com/arodriguez175/ecommerce-spa"
           target="_blank"
+          rel="noreferrer"
         >
           <FontAwesomeIcon
             icon={faGithub}

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function SignIn() {
   return (
     <div className="mx-4 md:mx-[115px] lg:mx-[230px] mt-5 border border-lightgrayBorder rounded-xl">
@@ -24,16 +26,16 @@ function SignIn() {
             <input type="checkbox" className="ml-2 cursor-pointer" />
           </div>
 
-          <a href="#" className="text-[dodgerblue] underline">
+          <Link to="#" className="text-[dodgerblue] underline">
             Forgot password?
-          </a>
+          </Link>
         </div>
 
         <p className="text-[9pt]">
           By creating an account you agree to our{" "}
-          <a href="#" className="text-[dodgerblue] underline">
+          <Link to="#" className="text-[dodgerblue] underline">
             Terms & Privacy
-          </a>
+          </Link>
         </p>
 
         <div className="grid md:inline">

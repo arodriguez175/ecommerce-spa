@@ -1036,6 +1036,10 @@ video {
   padding: 10px;
 }
 
+.p-20 {
+  padding: 5rem;
+}
+
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -1206,6 +1210,10 @@ video {
 
 .leading-8 {
   line-height: 2rem;
+}
+
+.leading-4 {
+  line-height: 1rem;
 }
 
 .text-green {
@@ -1648,6 +1656,10 @@ video {
 
 .\[\&\>\*\]\:leading-8>* {
   line-height: 2rem;
+}
+
+.\[\&\>\*\]\:leading-4>* {
+  line-height: 1rem;
 }
 
 @media (min-width: 768px) {
