@@ -19,7 +19,9 @@ function SearchResultsPage() {
 
   return (
     <div>
-      <h2 className="text-center text-2xl m-5">Search Results</h2>
+      <h2 className="text-center text-2xl m-5">
+        Search Results for "{document.querySelector("#turnstoneId").value}"
+      </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mx-10 md:mx-20">
         {searchResultsCatalaog.map((shoe) => (
           <ShoeCard
