@@ -4,7 +4,8 @@ import { useNavigate } from "react-router-dom";
 import { useRef, useState } from "react";
 
 function Search(props) {
-  const [state, setState] = useState("");
+  // state for what goes in the search bar
+  const [searchQuery, setSearchQuery] = useState("");
 
   const shoeCatalog = useSelector((state) => state.shoeCatalog.shoes);
   const navigate = useNavigate();
@@ -33,8 +34,10 @@ function Search(props) {
         ref={turnstoneRef}
         styles={styles}
         id="turnstoneId"
-        value={state}
-        onChange={(e) => setState(document.querySelector("#turnstoneId").value)}
+        value={searchQuery}
+        onChange={(e) =>
+          setSearchQuery(document.querySelector("#turnstoneId").value)
+        }
         onSelect={(selectedItem) => {
           if (selectedItem) {
             navigate(`/shoes/${selectedItem.id}`);
@@ -45,7 +48,7 @@ function Search(props) {
       />
       <button
         className="bg-primary text-secondary ml-1 rounded p-3 hover:bg-darkgray"
-        disabled={!state}
+        disabled={!searchQuery}
         onClick={() => {
           navigate(
             `/search?query=${document.querySelector("#turnstoneId").value}`
