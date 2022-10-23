@@ -96,7 +96,7 @@ function ShoePage() {
                 className={`bg-primary text-secondary hover:text-secondary hover:bg-darkgray w-[250px] md:w-[300px] p-2 mt-3 mb-3 rounded
                 ${!selectedSize && "disabled"}
                 `}
-                disabled={!selectedSize}
+                disabled={!selectedSize} // disabled unless a size is selected
               >
                 {cartButtonText}
               </button>
